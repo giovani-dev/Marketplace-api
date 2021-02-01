@@ -18,5 +18,5 @@ from django.urls import path, include
 import Offers.views as vw_offers
 
 urlpatterns = [
-    path('user/list', vw_offers.ListOffers.as_view(), name="list user offers")
+    path('client', vw_offers.ListOffers.as_view(), name="list user offers")
 ]

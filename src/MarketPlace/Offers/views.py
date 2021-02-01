@@ -14,4 +14,5 @@ class ListOffers(generics.CreateAPIView):
     serializer_class = SerializeOffers
 
     def post(self, request, *args, **kwargs):
-        return Response({ "Offers": OffersComponent().get(client=self.request.data) })
+        offers = OffersComponent().search(client=self.request.data)
+        return Response({ "Offers": offers.get_serialized() })

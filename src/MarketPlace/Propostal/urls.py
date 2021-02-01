@@ -15,7 +15,8 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path, include
+import Propostal.views as vw_propostal
 
 urlpatterns = [
-    path('', admin.site.urls),
+    path('client', vw_propostal.PropostalSend.as_view(), name='Envio de proposta'),
 ]
