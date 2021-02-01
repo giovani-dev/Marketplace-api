@@ -11,6 +11,7 @@ https://docs.djangoproject.com/en/3.1/ref/settings/
 """
 
 from pathlib import Path
+from celery.schedules import crontab
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
@@ -26,6 +27,19 @@ SECRET_KEY = 'dxww8+pkvq)$tvudohb1$q+$32f#4_e9=t-^&pe#pk@sn0qxy6'
 DEBUG = True
 
 ALLOWED_HOSTS = ['127.0.0.1']
+
+CELERY_BROKER_URL = 'redis://localhost:6379'
+CELERY_RESULT_BACKEND = 'redis://localhost:6379'
+CELERY_ACCEPT_CONTENT = ['application/json']
+CELERY_RESULT_SERIALIZER = 'json'
+CELERY_TASK_SERIALIZER = 'json'
+CELERY_TIMEZONE = 'America/Sao_Paulo'
+CELERY_BEAT_SCHEDULE = {
+    'verify_propostal': {
+        'task': 'Propostal.tasks.verify_propostal'
+        'schedule': crontab(hour='23')
+    }
+}
 
 
 # Application definition
