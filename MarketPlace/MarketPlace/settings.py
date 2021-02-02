@@ -29,7 +29,7 @@ SECRET_KEY = 'dxww8+pkvq)$tvudohb1$q+$32f#4_e9=t-^&pe#pk@sn0qxy6'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['127.0.0.1']
+ALLOWED_HOSTS = ['*']
 
 CELERY_BROKER_URL = 'redis://localhost:6379'
 CELERY_RESULT_BACKEND = 'redis://localhost:6379'
@@ -102,7 +102,7 @@ DATABASES = {
         'NAME': 'market_place',
         'USER': 'root',
         'PASSWORD': 'password',
-        'HOST': 'localhost',
+        'HOST': '127.0.0.1',
         'PORT': '3306',
     }
 }

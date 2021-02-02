@@ -1,41 +1,51 @@
-version: '3.3'
+version: '3.7'
 services:
-
   db:
-    image: mysql:5.7.20
+    image: mysql:5.7
     container_name: Mysql
     restart: always
     environment:
-      MYSQL_DATABASE: 'db'
-      MYSQL_USER: 'user'
-      MYSQL_PASSWORD: 'password'
-      MYSQL_ROOT_PASSWORD: 'password'
+      - MYSQL_DATABASE=market_place
+      - MYSQL_ROOT_PASSWORD=password
     ports:
       - '3306:3306'
-    expose:
-      - '3306'
     volumes:
       - my-db:/var/lib/mysql
       - ./db:/docker-entrypoint-initdb.
       - ./db/initial.sql:/docker-entrypoint-initdb.d/initial.sql
+    # networks:
+    #   - backend-network
 
   redis:
     image: "redis:alpine"
     container_name: Redis
-    # command: redis-server --requirepass password
+    restart: always
     ports:
       - '6379:6379'
+    # networks:
+    #   - backend-network
 
-  api:
-    build:
-      context: ./MarketPlace/
-      dockerfile: Dockerfile
-    container_name: API
-    command: bash -c "python /MarketPlace/manage.py migrate "
-    ports: 
-      - "8000:8000"
-    depends_on: 
-      - db
+  # api:
+  #   build:
+  #     context: ./MarketPlace/
+  #     dockerfile: Dockerfile
+  #   container_name: API
+  #   restart: always
+  #   # command: mysql --host=127.0.0.1 --port=32000 -u root -p password
+  #   ports: 
+  #     - "8000:8000"
+  #   depends_on: 
+  #     - db
+  #     - redis
+  #   links:
+  #     - db
+  #   networks:
+  #     - backend-network
+  #     - frontend-network
+
+# networks:
+#   backend-network:
+#   frontend-network:
 
 volumes:
   my-db:
