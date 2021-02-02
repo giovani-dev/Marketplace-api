@@ -1,5 +1,6 @@
 version: '3.3'
 services:
+
   db:
     image: mysql:5.7.20
     container_name: Mysql
@@ -16,14 +17,25 @@ services:
     volumes:
       - my-db:/var/lib/mysql
       - ./db:/docker-entrypoint-initdb.
+      - ./db/initial.sql:/docker-entrypoint-initdb.d/initial.sql
+
+  redis:
+    image: "redis:alpine"
+    container_name: Redis
+    # command: redis-server --requirepass password
+    ports:
+      - '6379:6379'
+
   api:
     build:
       context: ./MarketPlace/
       dockerfile: Dockerfile
-    container_name: Market_Place_API
+    container_name: API
+    command: bash -c "python /MarketPlace/manage.py migrate "
     ports: 
       - "8000:8000"
     depends_on: 
       - db
+
 volumes:
   my-db:
