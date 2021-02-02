@@ -123,7 +123,7 @@ class PropostalComponent(object):
         is_related = False   
         try:
             for offer in self.offers.get_queryset():
-                if self.validate.is_valid_offer(query_offer=offer, request_offer=self.validated_data['offer'])# self.is_valid_offer(query_offer=offer, request_offer=self.validated_data['offer']):
+                if self.validate.is_valid_offer(query_offer=offer, request_offer=self.validated_data['offer']):# self.is_valid_offer(query_offer=offer, request_offer=self.validated_data['offer']):
                     is_related = True
                     self.instance.offer = offer
                     self.instance.client = self.offers.get_client()

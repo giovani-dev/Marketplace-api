@@ -13,6 +13,9 @@ https://docs.djangoproject.com/en/3.1/ref/settings/
 from pathlib import Path
 from celery.schedules import crontab
 
+# import os
+# os.system("python manage.py migrate --noinput")
+
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
 
@@ -36,7 +39,7 @@ CELERY_TASK_SERIALIZER = 'json'
 CELERY_TIMEZONE = 'America/Sao_Paulo'
 CELERY_BEAT_SCHEDULE = {
     'verify_propostal': {
-        'task': 'Propostal.tasks.verify_propostal'
+        'task': 'Propostal.tasks.verify_propostal',
         'schedule': crontab(hour='23')
     }
 }
@@ -52,7 +55,6 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'rest_framework',
-    'drf_yasg',
     'Offers',
     'Propostal',
     'Client'
@@ -97,7 +99,7 @@ WSGI_APPLICATION = 'MarketPlace.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.mysql',
-        'NAME': 'maket_place',
+        'NAME': 'market_place',
         'USER': 'root',
         'PASSWORD': 'password',
         'HOST': 'localhost',

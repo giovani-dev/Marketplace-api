@@ -4102,3 +4102,35 @@ DEBUG:urllib3.connectionpool:https://b5c49244-9620-485d-9b32-806899842a22.mock.p
 DEBUG:asyncio:Using proactor: IocpProactor
 DEBUG:asyncio:Using proactor: IocpProactor
 DEBUG:asyncio:Using proactor: IocpProactor
+INFO:django.utils.autoreload:Watching for file changes with StatReloader
+INFO:django.utils.autoreload:C:\Users\Pichau\Documents\projects\Marketplace-api\src\MarketPlace\Lib\Propostal.py changed, reloading.
+DEBUG:asyncio:Using proactor: IocpProactor
+INFO:django.utils.autoreload:Watching for file changes with StatReloader
+INFO:django.utils.autoreload:Watching for file changes with StatReloader
+DEBUG:asyncio:Using proactor: IocpProactor
+DEBUG:asyncio:Using proactor: IocpProactor
+INFO:django.utils.autoreload:Watching for file changes with StatReloader
+DEBUG:asyncio:Using proactor: IocpProactor
+DEBUG:asyncio:Using proactor: IocpProactor
+INFO:django.utils.autoreload:Watching for file changes with StatReloader
+DEBUG:asyncio:Using proactor: IocpProactor
+INFO:django.utils.autoreload:Watching for file changes with StatReloader
+DEBUG:asyncio:Using proactor: IocpProactor
+INFO:django.utils.autoreload:Watching for file changes with StatReloader
+DEBUG:asyncio:Using proactor: IocpProactor
+INFO:django.utils.autoreload:Watching for file changes with StatReloader
+DEBUG:asyncio:Using proactor: IocpProactor
+DEBUG:asyncio:Using proactor: IocpProactor
+INFO:django.utils.autoreload:Watching for file changes with StatReloader
+DEBUG:asyncio:Using proactor: IocpProactor
+DEBUG:asyncio:Using proactor: IocpProactor
+INFO:django.utils.autoreload:Watching for file changes with StatReloader
+DEBUG:asyncio:Using proactor: IocpProactor
+DEBUG:asyncio:Using proactor: IocpProactor
+DEBUG:asyncio:Using proactor: IocpProactor
+DEBUG:asyncio:Using proactor: IocpProactor
+DEBUG:asyncio:Using proactor: IocpProactor
+DEBUG:asyncio:Using proactor: IocpProactor
+DEBUG:asyncio:Using proactor: IocpProactor
+DEBUG:asyncio:Using proactor: IocpProactor
+DEBUG:asyncio:Using proactor: IocpProactor
