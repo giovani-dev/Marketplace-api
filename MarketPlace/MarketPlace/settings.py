@@ -39,8 +39,8 @@ CELERY_TASK_SERIALIZER = 'json'
 CELERY_TIMEZONE = 'America/Sao_Paulo'
 CELERY_BEAT_SCHEDULE = {
     'verify_propostal': {
-        'task': 'Propostal.tasks.verify_propostal',
-        'schedule': crontab(hour='23')
+        'task': 'Propostal.tasks.task_verify_propostal',
+        'schedule': crontab()
     }
 }
 

@@ -19,23 +19,23 @@ services:
       - ./db:/docker-entrypoint-initdb.
       - ./db/initial.sql:/docker-entrypoint-initdb.d/initial.sql
 
+  api:
+    build:
+      context: ./MarketPlace/
+      dockerfile: Dockerfile
+    # command: bash -c "python /MarketPlace/manage.py migrate"
+    container_name: API
+    ports: 
+      - "8000:8000"
+    depends_on: 
+      - db
+
   redis:
     image: "redis:alpine"
     container_name: Redis
     # command: redis-server --requirepass password
     ports:
       - '6379:6379'
-
-  api:
-    build:
-      context: ./MarketPlace/
-      dockerfile: Dockerfile
-    container_name: API
-    command: bash -c "python /MarketPlace/manage.py migrate "
-    ports: 
-      - "8000:8000"
-    depends_on: 
-      - db
 
 volumes:
   my-db:

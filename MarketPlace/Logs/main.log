@@ -4134,3 +4134,1088 @@ DEBUG:asyncio:Using proactor: IocpProactor
 DEBUG:asyncio:Using proactor: IocpProactor
 DEBUG:asyncio:Using proactor: IocpProactor
 DEBUG:asyncio:Using proactor: IocpProactor
+INFO:django.utils.autoreload:Watching for file changes with StatReloader
+DEBUG:asyncio:Using proactor: IocpProactor
+DEBUG:asyncio:Using proactor: IocpProactor
+DEBUG:asyncio:Using proactor: IocpProactor
+INFO:django.utils.autoreload:Watching for file changes with StatReloader
+INFO:django.utils.autoreload:C:\Users\Pichau\Documents\projects\Marketplace-api\MarketPlace\Propostal\models.py changed, reloading.
+DEBUG:asyncio:Using proactor: IocpProactor
+INFO:django.utils.autoreload:Watching for file changes with StatReloader
+DEBUG:asyncio:Using proactor: IocpProactor
+DEBUG:asyncio:Using proactor: IocpProactor
+DEBUG:asyncio:Using proactor: IocpProactor
+DEBUG:asyncio:Using proactor: IocpProactor
+DEBUG:asyncio:Using proactor: IocpProactor
+INFO:django.utils.autoreload:Watching for file changes with StatReloader
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): b5c49244-9620-485d-9b32-806899842a22.mock.pstmn.io:443
+DEBUG:urllib3.connectionpool:https://b5c49244-9620-485d-9b32-806899842a22.mock.pstmn.io:443 "POST /offers HTTP/1.1" 200 None
+WARNING:django.request:Bad Request: /api/offers/client
+WARNING:django.request:Bad Request: /api/offers/client
+WARNING:django.request:Bad Request: /api/offers/client
+WARNING:django.request:Bad Request: /api/offers/client
+WARNING:django.request:Bad Request: /api/offers/client
+WARNING:django.request:Bad Request: /api/offers/client
+WARNING:django.request:Bad Request: /api/offers/client
+INFO:django.utils.autoreload:C:\Users\Pichau\Documents\projects\Marketplace-api\MarketPlace\Offers\serializer.py changed, reloading.
+DEBUG:asyncio:Using proactor: IocpProactor
+INFO:django.utils.autoreload:Watching for file changes with StatReloader
+WARNING:django.request:Bad Request: /api/offers/client
+INFO:django.utils.autoreload:C:\Users\Pichau\Documents\projects\Marketplace-api\MarketPlace\Offers\serializer.py changed, reloading.
+DEBUG:asyncio:Using proactor: IocpProactor
+INFO:django.utils.autoreload:Watching for file changes with StatReloader
+INFO:django.utils.autoreload:C:\Users\Pichau\Documents\projects\Marketplace-api\MarketPlace\Offers\serializer.py changed, reloading.
+DEBUG:asyncio:Using proactor: IocpProactor
+INFO:django.utils.autoreload:Watching for file changes with StatReloader
+INFO:django.utils.autoreload:C:\Users\Pichau\Documents\projects\Marketplace-api\MarketPlace\Client\serializer.py changed, reloading.
+DEBUG:asyncio:Using proactor: IocpProactor
+INFO:django.utils.autoreload:Watching for file changes with StatReloader
+INFO:django.utils.autoreload:C:\Users\Pichau\Documents\projects\Marketplace-api\MarketPlace\Client\serializer.py changed, reloading.
+DEBUG:asyncio:Using proactor: IocpProactor
+INFO:django.utils.autoreload:Watching for file changes with StatReloader
+WARNING:django.request:Bad Request: /api/offers/client
+INFO:django.utils.autoreload:C:\Users\Pichau\Documents\projects\Marketplace-api\MarketPlace\Client\serializer.py changed, reloading.
+DEBUG:asyncio:Using proactor: IocpProactor
+INFO:django.utils.autoreload:Watching for file changes with StatReloader
+INFO:django.utils.autoreload:C:\Users\Pichau\Documents\projects\Marketplace-api\MarketPlace\Client\serializer.py changed, reloading.
+DEBUG:asyncio:Using proactor: IocpProactor
+INFO:django.utils.autoreload:Watching for file changes with StatReloader
+WARNING:django.request:Bad Request: /api/offers/client
+ERROR:django.request:Internal Server Error: /api/offers/client
+Traceback (most recent call last):
+  File "C:\Users\Pichau\Documents\projects\Marketplace-api\venv\MarketPlace\lib\site-packages\django\core\handlers\exception.py", line 47, in inner
+    response = get_response(request)
+  File "C:\Users\Pichau\Documents\projects\Marketplace-api\venv\MarketPlace\lib\site-packages\django\core\handlers\base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\Pichau\Documents\projects\Marketplace-api\venv\MarketPlace\lib\site-packages\django\views\decorators\csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "C:\Users\Pichau\Documents\projects\Marketplace-api\venv\MarketPlace\lib\site-packages\django\views\generic\base.py", line 70, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\Users\Pichau\Documents\projects\Marketplace-api\venv\MarketPlace\lib\site-packages\rest_framework\views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "C:\Users\Pichau\Documents\projects\Marketplace-api\venv\MarketPlace\lib\site-packages\rest_framework\views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\Users\Pichau\Documents\projects\Marketplace-api\venv\MarketPlace\lib\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "C:\Users\Pichau\Documents\projects\Marketplace-api\venv\MarketPlace\lib\site-packages\rest_framework\views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "C:\Users\Pichau\Documents\projects\Marketplace-api\MarketPlace\Offers\views.py", line 17, in post
+    offers = OffersComponent().search(client=self.request.data)
+  File "C:\Users\Pichau\Documents\projects\Marketplace-api\MarketPlace\Lib\Offers.py", line 38, in search
+    self.instance_client = self.client(client_data=client)
+  File "C:\Users\Pichau\Documents\projects\Marketplace-api\MarketPlace\Lib\Offers.py", line 15, in client
+    serial.is_valid(raise_exception=True)
+  File "C:\Users\Pichau\Documents\projects\Marketplace-api\venv\MarketPlace\lib\site-packages\rest_framework\serializers.py", line 220, in is_valid
+    self._validated_data = self.run_validation(self.initial_data)
+  File "C:\Users\Pichau\Documents\projects\Marketplace-api\venv\MarketPlace\lib\site-packages\rest_framework\serializers.py", line 419, in run_validation
+    value = self.to_internal_value(data)
+  File "C:\Users\Pichau\Documents\projects\Marketplace-api\venv\MarketPlace\lib\site-packages\rest_framework\serializers.py", line 478, in to_internal_value
+    validated_value = validate_method(validated_value)
+  File "C:\Users\Pichau\Documents\projects\Marketplace-api\MarketPlace\Client\serializer.py", line 31, in validate_net_salary
+    super(SerializeClient, self).validate_net_salary(data)
+AttributeError: 'super' object has no attribute 'validate_net_salary'
+INFO:django.utils.autoreload:C:\Users\Pichau\Documents\projects\Marketplace-api\MarketPlace\Client\serializer.py changed, reloading.
+DEBUG:asyncio:Using proactor: IocpProactor
+INFO:django.utils.autoreload:Watching for file changes with StatReloader
+WARNING:django.request:Bad Request: /api/offers/client
+WARNING:django.request:Bad Request: /api/offers/client
+INFO:django.utils.autoreload:C:\Users\Pichau\Documents\projects\Marketplace-api\MarketPlace\Client\serializer.py changed, reloading.
+DEBUG:asyncio:Using proactor: IocpProactor
+INFO:django.utils.autoreload:Watching for file changes with StatReloader
+INFO:django.utils.autoreload:C:\Users\Pichau\Documents\projects\Marketplace-api\MarketPlace\Client\serializer.py changed, reloading.
+DEBUG:asyncio:Using proactor: IocpProactor
+INFO:django.utils.autoreload:Watching for file changes with StatReloader
+INFO:django.utils.autoreload:C:\Users\Pichau\Documents\projects\Marketplace-api\MarketPlace\Client\serializer.py changed, reloading.
+DEBUG:asyncio:Using proactor: IocpProactor
+INFO:django.utils.autoreload:Watching for file changes with StatReloader
+WARNING:django.request:Bad Request: /api/offers/client
+INFO:django.utils.autoreload:C:\Users\Pichau\Documents\projects\Marketplace-api\MarketPlace\Client\serializer.py changed, reloading.
+DEBUG:asyncio:Using proactor: IocpProactor
+INFO:django.utils.autoreload:Watching for file changes with StatReloader
+DEBUG:asyncio:Using proactor: IocpProactor
+DEBUG:asyncio:Using proactor: IocpProactor
+INFO:django.utils.autoreload:Watching for file changes with StatReloader
+WARNING:django.request:Bad Request: /api/offers/client
+INFO:django.utils.autoreload:C:\Users\Pichau\Documents\projects\Marketplace-api\MarketPlace\Client\serializer.py changed, reloading.
+DEBUG:asyncio:Using proactor: IocpProactor
+INFO:django.utils.autoreload:Watching for file changes with StatReloader
+WARNING:django.request:Bad Request: /api/offers/client
+INFO:django.utils.autoreload:C:\Users\Pichau\Documents\projects\Marketplace-api\MarketPlace\Client\serializer.py changed, reloading.
+DEBUG:asyncio:Using proactor: IocpProactor
+INFO:django.utils.autoreload:Watching for file changes with StatReloader
+WARNING:django.request:Bad Request: /api/offers/client
+INFO:django.utils.autoreload:C:\Users\Pichau\Documents\projects\Marketplace-api\MarketPlace\Client\serializer.py changed, reloading.
+DEBUG:asyncio:Using proactor: IocpProactor
+INFO:django.utils.autoreload:Watching for file changes with StatReloader
+WARNING:django.request:Bad Request: /api/offers/client
+WARNING:django.request:Bad Request: /api/offers/client
+WARNING:django.request:Bad Request: /api/offers/client
+WARNING:django.request:Bad Request: /api/offers/client
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): b5c49244-9620-485d-9b32-806899842a22.mock.pstmn.io:443
+DEBUG:urllib3.connectionpool:https://b5c49244-9620-485d-9b32-806899842a22.mock.pstmn.io:443 "POST /offers HTTP/1.1" 200 None
+WARNING:django.request:Bad Request: /api/propostal/client
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): b5c49244-9620-485d-9b32-806899842a22.mock.pstmn.io:443
+DEBUG:urllib3.connectionpool:https://b5c49244-9620-485d-9b32-806899842a22.mock.pstmn.io:443 "POST /offers HTTP/1.1" 200 None
+ERROR:django.request:Internal Server Error: /api/propostal/client
+Traceback (most recent call last):
+  File "C:\Users\Pichau\Documents\projects\Marketplace-api\MarketPlace\Lib\Propostal.py", line 107, in send_request_to_service
+    assert self.validate.client_have_a_propostal(delay_time_in_days=30, propostal_id=instance_propostal.id, propostal_client=instance_propostal.client)
+AssertionError
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\Pichau\Documents\projects\Marketplace-api\venv\MarketPlace\lib\site-packages\django\core\handlers\exception.py", line 47, in inner
+    response = get_response(request)
+  File "C:\Users\Pichau\Documents\projects\Marketplace-api\venv\MarketPlace\lib\site-packages\django\core\handlers\base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\Pichau\Documents\projects\Marketplace-api\venv\MarketPlace\lib\site-packages\django\views\decorators\csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "C:\Users\Pichau\Documents\projects\Marketplace-api\venv\MarketPlace\lib\site-packages\django\views\generic\base.py", line 70, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\Users\Pichau\Documents\projects\Marketplace-api\venv\MarketPlace\lib\site-packages\rest_framework\views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "C:\Users\Pichau\Documents\projects\Marketplace-api\venv\MarketPlace\lib\site-packages\rest_framework\views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\Users\Pichau\Documents\projects\Marketplace-api\venv\MarketPlace\lib\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "C:\Users\Pichau\Documents\projects\Marketplace-api\venv\MarketPlace\lib\site-packages\rest_framework\views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "C:\Users\Pichau\Documents\projects\Marketplace-api\MarketPlace\Propostal\views.py", line 13, in post
+    propostal = PropostalComponent(data=self.request.data).create()
+  File "C:\Users\Pichau\Documents\projects\Marketplace-api\MarketPlace\Lib\Propostal.py", line 134, in create
+    raise e
+  File "C:\Users\Pichau\Documents\projects\Marketplace-api\MarketPlace\Lib\Propostal.py", line 131, in create
+    self.send_request_to_service(local_request_data=self.validated_data, instance_propostal=self.instance)
+  File "C:\Users\Pichau\Documents\projects\Marketplace-api\MarketPlace\Lib\Propostal.py", line 110, in send_request_to_service
+    sended_propostal = self.propostal_service().request(raise_exception=True).decode_to_json()
+  File "C:\Users\Pichau\Documents\projects\Marketplace-api\MarketPlace\Lib\Propostal.py", line 73, in request
+    self.response = requests.post('https://b5c49244-9620-485d-9b32-806899842a22.mock.pstmn.io/proposal', json=local_request_data)
+NameError: name 'local_request_data' is not defined
+INFO:django.utils.autoreload:C:\Users\Pichau\Documents\projects\Marketplace-api\MarketPlace\Lib\Propostal.py changed, reloading.
+DEBUG:asyncio:Using proactor: IocpProactor
+INFO:django.utils.autoreload:Watching for file changes with StatReloader
+INFO:django.utils.autoreload:C:\Users\Pichau\Documents\projects\Marketplace-api\MarketPlace\Lib\Propostal.py changed, reloading.
+DEBUG:asyncio:Using proactor: IocpProactor
+INFO:django.utils.autoreload:Watching for file changes with StatReloader
+INFO:django.utils.autoreload:C:\Users\Pichau\Documents\projects\Marketplace-api\MarketPlace\Lib\Propostal.py changed, reloading.
+DEBUG:asyncio:Using proactor: IocpProactor
+INFO:django.utils.autoreload:Watching for file changes with StatReloader
+INFO:django.utils.autoreload:C:\Users\Pichau\Documents\projects\Marketplace-api\MarketPlace\Lib\Propostal.py changed, reloading.
+DEBUG:asyncio:Using proactor: IocpProactor
+INFO:django.utils.autoreload:Watching for file changes with StatReloader
+INFO:django.utils.autoreload:C:\Users\Pichau\Documents\projects\Marketplace-api\MarketPlace\Lib\Propostal.py changed, reloading.
+DEBUG:asyncio:Using proactor: IocpProactor
+INFO:django.utils.autoreload:Watching for file changes with StatReloader
+INFO:django.utils.autoreload:C:\Users\Pichau\Documents\projects\Marketplace-api\MarketPlace\Lib\Propostal.py changed, reloading.
+DEBUG:asyncio:Using proactor: IocpProactor
+INFO:django.utils.autoreload:Watching for file changes with StatReloader
+INFO:django.utils.autoreload:C:\Users\Pichau\Documents\projects\Marketplace-api\MarketPlace\Lib\Propostal.py changed, reloading.
+DEBUG:asyncio:Using proactor: IocpProactor
+INFO:django.utils.autoreload:Watching for file changes with StatReloader
+INFO:django.utils.autoreload:C:\Users\Pichau\Documents\projects\Marketplace-api\MarketPlace\Lib\Propostal.py changed, reloading.
+DEBUG:asyncio:Using proactor: IocpProactor
+INFO:django.utils.autoreload:Watching for file changes with StatReloader
+DEBUG:asyncio:Using proactor: IocpProactor
+DEBUG:asyncio:Using proactor: IocpProactor
+DEBUG:asyncio:Using proactor: IocpProactor
+INFO:django.utils.autoreload:Watching for file changes with StatReloader
+ERROR:django.request:Internal Server Error: /api/propostal/client
+Traceback (most recent call last):
+  File "C:\Users\Pichau\Documents\projects\Marketplace-api\venv\MarketPlace\lib\site-packages\django\core\handlers\exception.py", line 47, in inner
+    response = get_response(request)
+  File "C:\Users\Pichau\Documents\projects\Marketplace-api\venv\MarketPlace\lib\site-packages\django\core\handlers\base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\Pichau\Documents\projects\Marketplace-api\venv\MarketPlace\lib\site-packages\django\views\decorators\csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "C:\Users\Pichau\Documents\projects\Marketplace-api\venv\MarketPlace\lib\site-packages\django\views\generic\base.py", line 70, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\Users\Pichau\Documents\projects\Marketplace-api\venv\MarketPlace\lib\site-packages\rest_framework\views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "C:\Users\Pichau\Documents\projects\Marketplace-api\venv\MarketPlace\lib\site-packages\rest_framework\views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\Users\Pichau\Documents\projects\Marketplace-api\venv\MarketPlace\lib\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "C:\Users\Pichau\Documents\projects\Marketplace-api\venv\MarketPlace\lib\site-packages\rest_framework\views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "C:\Users\Pichau\Documents\projects\Marketplace-api\MarketPlace\Propostal\views.py", line 13, in post
+    propostal = PropostalComponent(data=self.request.data).create()
+  File "C:\Users\Pichau\Documents\projects\Marketplace-api\MarketPlace\Lib\Propostal.py", line 31, in __init__
+    self.validated_data = self.set_validated_date(data=data)
+  File "C:\Users\Pichau\Documents\projects\Marketplace-api\MarketPlace\Lib\Propostal.py", line 44, in set_validated_date
+    validated_data = ValidatePropostal.received_data(data)
+NameError: name 'ValidatePropostal' is not defined
+INFO:django.utils.autoreload:C:\Users\Pichau\Documents\projects\Marketplace-api\MarketPlace\Lib\Propostal.py changed, reloading.
+DEBUG:asyncio:Using proactor: IocpProactor
+INFO:django.utils.autoreload:Watching for file changes with StatReloader
+ERROR:django.request:Internal Server Error: /api/propostal/client
+Traceback (most recent call last):
+  File "C:\Users\Pichau\Documents\projects\Marketplace-api\venv\MarketPlace\lib\site-packages\django\core\handlers\exception.py", line 47, in inner
+    response = get_response(request)
+  File "C:\Users\Pichau\Documents\projects\Marketplace-api\venv\MarketPlace\lib\site-packages\django\core\handlers\base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\Pichau\Documents\projects\Marketplace-api\venv\MarketPlace\lib\site-packages\django\views\decorators\csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "C:\Users\Pichau\Documents\projects\Marketplace-api\venv\MarketPlace\lib\site-packages\django\views\generic\base.py", line 70, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\Users\Pichau\Documents\projects\Marketplace-api\venv\MarketPlace\lib\site-packages\rest_framework\views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "C:\Users\Pichau\Documents\projects\Marketplace-api\venv\MarketPlace\lib\site-packages\rest_framework\views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\Users\Pichau\Documents\projects\Marketplace-api\venv\MarketPlace\lib\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "C:\Users\Pichau\Documents\projects\Marketplace-api\venv\MarketPlace\lib\site-packages\rest_framework\views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "C:\Users\Pichau\Documents\projects\Marketplace-api\MarketPlace\Propostal\views.py", line 13, in post
+    propostal = PropostalComponent(data=self.request.data).create()
+  File "C:\Users\Pichau\Documents\projects\Marketplace-api\MarketPlace\Lib\Propostal.py", line 35, in __init__
+    self.validated_data = self.set_validated_date(data=data)
+  File "C:\Users\Pichau\Documents\projects\Marketplace-api\MarketPlace\Lib\Propostal.py", line 49, in set_validated_date
+    return ProposalDataTreat(validated_data=validated_data).filter_offer()
+  File "C:\Users\Pichau\Documents\projects\Marketplace-api\MarketPlace\Lib\Propostal.py", line 23, in filter_offer
+    self.validated_data['offer'].update(request_offer_filtrated)
+NameError: name 'request_offer_filtrated' is not defined
+INFO:django.utils.autoreload:C:\Users\Pichau\Documents\projects\Marketplace-api\MarketPlace\Lib\Propostal.py changed, reloading.
+DEBUG:asyncio:Using proactor: IocpProactor
+INFO:django.utils.autoreload:Watching for file changes with StatReloader
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): b5c49244-9620-485d-9b32-806899842a22.mock.pstmn.io:443
+DEBUG:urllib3.connectionpool:https://b5c49244-9620-485d-9b32-806899842a22.mock.pstmn.io:443 "POST /offers HTTP/1.1" 200 None
+ERROR:django.request:Internal Server Error: /api/propostal/client
+Traceback (most recent call last):
+  File "C:\Users\Pichau\Documents\projects\Marketplace-api\venv\MarketPlace\lib\site-packages\django\core\handlers\exception.py", line 47, in inner
+    response = get_response(request)
+  File "C:\Users\Pichau\Documents\projects\Marketplace-api\venv\MarketPlace\lib\site-packages\django\core\handlers\base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\Pichau\Documents\projects\Marketplace-api\venv\MarketPlace\lib\site-packages\django\views\decorators\csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "C:\Users\Pichau\Documents\projects\Marketplace-api\venv\MarketPlace\lib\site-packages\django\views\generic\base.py", line 70, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\Users\Pichau\Documents\projects\Marketplace-api\venv\MarketPlace\lib\site-packages\rest_framework\views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "C:\Users\Pichau\Documents\projects\Marketplace-api\venv\MarketPlace\lib\site-packages\rest_framework\views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\Users\Pichau\Documents\projects\Marketplace-api\venv\MarketPlace\lib\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "C:\Users\Pichau\Documents\projects\Marketplace-api\venv\MarketPlace\lib\site-packages\rest_framework\views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "C:\Users\Pichau\Documents\projects\Marketplace-api\MarketPlace\Propostal\views.py", line 13, in post
+    propostal = PropostalComponent(data=self.request.data).create()
+  File "C:\Users\Pichau\Documents\projects\Marketplace-api\MarketPlace\Lib\Propostal.py", line 80, in create
+    raise e
+  File "C:\Users\Pichau\Documents\projects\Marketplace-api\MarketPlace\Lib\Propostal.py", line 77, in create
+    self.update_propostal()
+TypeError: update_propostal() missing 1 required positional argument: 'offer'
+INFO:django.utils.autoreload:C:\Users\Pichau\Documents\projects\Marketplace-api\MarketPlace\Lib\Propostal.py changed, reloading.
+DEBUG:asyncio:Using proactor: IocpProactor
+INFO:django.utils.autoreload:Watching for file changes with StatReloader
+ERROR:django.request:Internal Server Error: /api/propostal/client
+Traceback (most recent call last):
+  File "C:\Users\Pichau\Documents\projects\Marketplace-api\MarketPlace\Lib\Propostal.py", line 53, in send_request_to_service
+    assert self.validate.client_have_a_propostal(delay_time_in_days=30, propostal_id=instance_propostal.id, propostal_client=instance_propostal.client)
+AssertionError
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\Pichau\Documents\projects\Marketplace-api\venv\MarketPlace\lib\site-packages\django\core\handlers\exception.py", line 47, in inner
+    response = get_response(request)
+  File "C:\Users\Pichau\Documents\projects\Marketplace-api\venv\MarketPlace\lib\site-packages\django\core\handlers\base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\Pichau\Documents\projects\Marketplace-api\venv\MarketPlace\lib\site-packages\django\views\decorators\csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "C:\Users\Pichau\Documents\projects\Marketplace-api\venv\MarketPlace\lib\site-packages\django\views\generic\base.py", line 70, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\Users\Pichau\Documents\projects\Marketplace-api\venv\MarketPlace\lib\site-packages\rest_framework\views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "C:\Users\Pichau\Documents\projects\Marketplace-api\venv\MarketPlace\lib\site-packages\rest_framework\views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\Users\Pichau\Documents\projects\Marketplace-api\venv\MarketPlace\lib\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "C:\Users\Pichau\Documents\projects\Marketplace-api\venv\MarketPlace\lib\site-packages\rest_framework\views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "C:\Users\Pichau\Documents\projects\Marketplace-api\MarketPlace\Propostal\views.py", line 13, in post
+    propostal = PropostalComponent(data=self.request.data).create()
+  File "C:\Users\Pichau\Documents\projects\Marketplace-api\MarketPlace\Lib\Propostal.py", line 80, in create
+    raise e
+  File "C:\Users\Pichau\Documents\projects\Marketplace-api\MarketPlace\Lib\Propostal.py", line 77, in create
+    self.update_propostal(offer=offer)
+  File "C:\Users\Pichau\Documents\projects\Marketplace-api\MarketPlace\Lib\Propostal.py", line 69, in update_propostal
+    self.send_request_to_service(local_request_data=self.validated_data, instance_propostal=self.instance)
+  File "C:\Users\Pichau\Documents\projects\Marketplace-api\MarketPlace\Lib\Propostal.py", line 56, in send_request_to_service
+    sended_propostal = self.propostal_service().request(raise_exception=True).decode_to_json()
+  File "C:\Users\Pichau\Documents\projects\Marketplace-api\MarketPlace\Lib\propostal\service.py", line 15, in request
+    self.response = requests.post('https://b5c49244-9620-485d-9b32-806899842a22.mock.pstmn.io/proposal', json=local_request_data)
+NameError: name 'local_request_data' is not defined
+INFO:django.utils.autoreload:C:\Users\Pichau\Documents\projects\Marketplace-api\MarketPlace\Lib\Propostal.py changed, reloading.
+DEBUG:asyncio:Using proactor: IocpProactor
+INFO:django.utils.autoreload:Watching for file changes with StatReloader
+ERROR:django.request:Internal Server Error: /api/propostal/client
+Traceback (most recent call last):
+  File "C:\Users\Pichau\Documents\projects\Marketplace-api\MarketPlace\Lib\Propostal.py", line 55, in send_request_to_service
+    assert self.validate.client_have_a_propostal(delay_time_in_days=30, propostal_id=instance_propostal.id, propostal_client=instance_propostal.client)
+AssertionError
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\Pichau\Documents\projects\Marketplace-api\venv\MarketPlace\lib\site-packages\django\core\handlers\exception.py", line 47, in inner
+    response = get_response(request)
+  File "C:\Users\Pichau\Documents\projects\Marketplace-api\venv\MarketPlace\lib\site-packages\django\core\handlers\base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\Pichau\Documents\projects\Marketplace-api\venv\MarketPlace\lib\site-packages\django\views\decorators\csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "C:\Users\Pichau\Documents\projects\Marketplace-api\venv\MarketPlace\lib\site-packages\django\views\generic\base.py", line 70, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\Users\Pichau\Documents\projects\Marketplace-api\venv\MarketPlace\lib\site-packages\rest_framework\views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "C:\Users\Pichau\Documents\projects\Marketplace-api\venv\MarketPlace\lib\site-packages\rest_framework\views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\Users\Pichau\Documents\projects\Marketplace-api\venv\MarketPlace\lib\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "C:\Users\Pichau\Documents\projects\Marketplace-api\venv\MarketPlace\lib\site-packages\rest_framework\views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "C:\Users\Pichau\Documents\projects\Marketplace-api\MarketPlace\Propostal\views.py", line 13, in post
+    propostal = PropostalComponent(data=self.request.data).create()
+  File "C:\Users\Pichau\Documents\projects\Marketplace-api\MarketPlace\Lib\Propostal.py", line 82, in create
+    raise e
+  File "C:\Users\Pichau\Documents\projects\Marketplace-api\MarketPlace\Lib\Propostal.py", line 79, in create
+    self.update_propostal(offer=offer)
+  File "C:\Users\Pichau\Documents\projects\Marketplace-api\MarketPlace\Lib\Propostal.py", line 71, in update_propostal
+    self.send_request_to_service(local_request_data=self.validated_data, instance_propostal=self.instance)
+  File "C:\Users\Pichau\Documents\projects\Marketplace-api\MarketPlace\Lib\Propostal.py", line 58, in send_request_to_service
+    sended_propostal = self.propostal_service().request(raise_exception=True).decode_to_json()
+  File "C:\Users\Pichau\Documents\projects\Marketplace-api\MarketPlace\Lib\propostal\service.py", line 15, in request
+    self.response = requests.post('https://b5c49244-9620-485d-9b32-806899842a22.mock.pstmn.io/proposal', json=local_request_data)
+NameError: name 'local_request_data' is not defined
+INFO:django.utils.autoreload:C:\Users\Pichau\Documents\projects\Marketplace-api\MarketPlace\Lib\Propostal.py changed, reloading.
+DEBUG:asyncio:Using proactor: IocpProactor
+INFO:django.utils.autoreload:Watching for file changes with StatReloader
+INFO:django.utils.autoreload:C:\Users\Pichau\Documents\projects\Marketplace-api\MarketPlace\Lib\Propostal.py changed, reloading.
+DEBUG:asyncio:Using proactor: IocpProactor
+INFO:django.utils.autoreload:Watching for file changes with StatReloader
+INFO:django.utils.autoreload:C:\Users\Pichau\Documents\projects\Marketplace-api\MarketPlace\Lib\propostal\service.py changed, reloading.
+DEBUG:asyncio:Using proactor: IocpProactor
+INFO:django.utils.autoreload:Watching for file changes with StatReloader
+INFO:django.utils.autoreload:C:\Users\Pichau\Documents\projects\Marketplace-api\MarketPlace\Lib\propostal\service.py changed, reloading.
+DEBUG:asyncio:Using proactor: IocpProactor
+INFO:django.utils.autoreload:Watching for file changes with StatReloader
+INFO:django.utils.autoreload:C:\Users\Pichau\Documents\projects\Marketplace-api\MarketPlace\Lib\Propostal.py changed, reloading.
+DEBUG:asyncio:Using proactor: IocpProactor
+INFO:django.utils.autoreload:Watching for file changes with StatReloader
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): b5c49244-9620-485d-9b32-806899842a22.mock.pstmn.io:443
+DEBUG:urllib3.connectionpool:https://b5c49244-9620-485d-9b32-806899842a22.mock.pstmn.io:443 "POST /proposal HTTP/1.1" 200 None
+ERROR:django.request:Internal Server Error: /api/propostal/client
+Traceback (most recent call last):
+  File "C:\Users\Pichau\Documents\projects\Marketplace-api\MarketPlace\Lib\Propostal.py", line 55, in send_request_to_service
+    assert self.validate.client_have_a_propostal(delay_time_in_days=30, propostal_id=instance_propostal.id, propostal_client=instance_propostal.client)
+AssertionError
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\Pichau\Documents\projects\Marketplace-api\venv\MarketPlace\lib\site-packages\django\core\handlers\exception.py", line 47, in inner
+    response = get_response(request)
+  File "C:\Users\Pichau\Documents\projects\Marketplace-api\venv\MarketPlace\lib\site-packages\django\core\handlers\base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\Pichau\Documents\projects\Marketplace-api\venv\MarketPlace\lib\site-packages\django\views\decorators\csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "C:\Users\Pichau\Documents\projects\Marketplace-api\venv\MarketPlace\lib\site-packages\django\views\generic\base.py", line 70, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\Users\Pichau\Documents\projects\Marketplace-api\venv\MarketPlace\lib\site-packages\rest_framework\views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "C:\Users\Pichau\Documents\projects\Marketplace-api\venv\MarketPlace\lib\site-packages\rest_framework\views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\Users\Pichau\Documents\projects\Marketplace-api\venv\MarketPlace\lib\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "C:\Users\Pichau\Documents\projects\Marketplace-api\venv\MarketPlace\lib\site-packages\rest_framework\views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "C:\Users\Pichau\Documents\projects\Marketplace-api\MarketPlace\Propostal\views.py", line 13, in post
+    propostal = PropostalComponent(data=self.request.data).create()
+  File "C:\Users\Pichau\Documents\projects\Marketplace-api\MarketPlace\Lib\Propostal.py", line 82, in create
+    raise e
+  File "C:\Users\Pichau\Documents\projects\Marketplace-api\MarketPlace\Lib\Propostal.py", line 79, in create
+    self.update_propostal(offer=offer)
+  File "C:\Users\Pichau\Documents\projects\Marketplace-api\MarketPlace\Lib\Propostal.py", line 71, in update_propostal
+    self.send_request_to_service(local_request_data=self.validated_data, instance_propostal=self.instance)
+  File "C:\Users\Pichau\Documents\projects\Marketplace-api\MarketPlace\Lib\Propostal.py", line 59, in send_request_to_service
+    ManipulatePropostalModel.update_propostal(instance_to_update=instance_propostal, propostal_id=sended_propostal['propostal_id'], message=sended_propostal['propostal_id'])
+  File "C:\Users\Pichau\Documents\projects\Marketplace-api\MarketPlace\Lib\propostal\service.py", line 12, in __getitem__
+    return self.text[key]
+KeyError: 'propostal_id'
+INFO:django.utils.autoreload:C:\Users\Pichau\Documents\projects\Marketplace-api\MarketPlace\Lib\propostal\service.py changed, reloading.
+DEBUG:asyncio:Using proactor: IocpProactor
+INFO:django.utils.autoreload:Watching for file changes with StatReloader
+INFO:django.utils.autoreload:C:\Users\Pichau\Documents\projects\Marketplace-api\MarketPlace\Lib\propostal\service.py changed, reloading.
+DEBUG:asyncio:Using proactor: IocpProactor
+INFO:django.utils.autoreload:Watching for file changes with StatReloader
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): b5c49244-9620-485d-9b32-806899842a22.mock.pstmn.io:443
+DEBUG:urllib3.connectionpool:https://b5c49244-9620-485d-9b32-806899842a22.mock.pstmn.io:443 "POST /proposal HTTP/1.1" 200 None
+ERROR:django.request:Internal Server Error: /api/propostal/client
+Traceback (most recent call last):
+  File "C:\Users\Pichau\Documents\projects\Marketplace-api\MarketPlace\Lib\Propostal.py", line 55, in send_request_to_service
+    assert self.validate.client_have_a_propostal(delay_time_in_days=30, propostal_id=instance_propostal.id, propostal_client=instance_propostal.client)
+AssertionError
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\Pichau\Documents\projects\Marketplace-api\venv\MarketPlace\lib\site-packages\django\core\handlers\exception.py", line 47, in inner
+    response = get_response(request)
+  File "C:\Users\Pichau\Documents\projects\Marketplace-api\venv\MarketPlace\lib\site-packages\django\core\handlers\base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\Pichau\Documents\projects\Marketplace-api\venv\MarketPlace\lib\site-packages\django\views\decorators\csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "C:\Users\Pichau\Documents\projects\Marketplace-api\venv\MarketPlace\lib\site-packages\django\views\generic\base.py", line 70, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\Users\Pichau\Documents\projects\Marketplace-api\venv\MarketPlace\lib\site-packages\rest_framework\views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "C:\Users\Pichau\Documents\projects\Marketplace-api\venv\MarketPlace\lib\site-packages\rest_framework\views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\Users\Pichau\Documents\projects\Marketplace-api\venv\MarketPlace\lib\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "C:\Users\Pichau\Documents\projects\Marketplace-api\venv\MarketPlace\lib\site-packages\rest_framework\views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "C:\Users\Pichau\Documents\projects\Marketplace-api\MarketPlace\Propostal\views.py", line 13, in post
+    propostal = PropostalComponent(data=self.request.data).create()
+  File "C:\Users\Pichau\Documents\projects\Marketplace-api\MarketPlace\Lib\Propostal.py", line 82, in create
+    raise e
+  File "C:\Users\Pichau\Documents\projects\Marketplace-api\MarketPlace\Lib\Propostal.py", line 79, in create
+    self.update_propostal(offer=offer)
+  File "C:\Users\Pichau\Documents\projects\Marketplace-api\MarketPlace\Lib\Propostal.py", line 71, in update_propostal
+    self.send_request_to_service(local_request_data=self.validated_data, instance_propostal=self.instance)
+  File "C:\Users\Pichau\Documents\projects\Marketplace-api\MarketPlace\Lib\Propostal.py", line 59, in send_request_to_service
+    ManipulatePropostalModel.update_propostal(instance_to_update=instance_propostal, propostal_id=sended_propostal['propostal_id'], message=sended_propostal['propostal_id'])
+  File "C:\Users\Pichau\Documents\projects\Marketplace-api\MarketPlace\Lib\propostal\service.py", line 12, in __getitem__
+    return self.text[key]
+KeyError: 'propostal_id'
+INFO:django.utils.autoreload:C:\Users\Pichau\Documents\projects\Marketplace-api\MarketPlace\Lib\propostal\service.py changed, reloading.
+DEBUG:asyncio:Using proactor: IocpProactor
+INFO:django.utils.autoreload:Watching for file changes with StatReloader
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): b5c49244-9620-485d-9b32-806899842a22.mock.pstmn.io:443
+DEBUG:urllib3.connectionpool:https://b5c49244-9620-485d-9b32-806899842a22.mock.pstmn.io:443 "POST /proposal HTTP/1.1" 200 None
+ERROR:django.request:Internal Server Error: /api/propostal/client
+Traceback (most recent call last):
+  File "C:\Users\Pichau\Documents\projects\Marketplace-api\MarketPlace\Lib\Propostal.py", line 55, in send_request_to_service
+    assert self.validate.client_have_a_propostal(delay_time_in_days=30, propostal_id=instance_propostal.id, propostal_client=instance_propostal.client)
+AssertionError
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\Pichau\Documents\projects\Marketplace-api\venv\MarketPlace\lib\site-packages\django\core\handlers\exception.py", line 47, in inner
+    response = get_response(request)
+  File "C:\Users\Pichau\Documents\projects\Marketplace-api\venv\MarketPlace\lib\site-packages\django\core\handlers\base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\Pichau\Documents\projects\Marketplace-api\venv\MarketPlace\lib\site-packages\django\views\decorators\csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "C:\Users\Pichau\Documents\projects\Marketplace-api\venv\MarketPlace\lib\site-packages\django\views\generic\base.py", line 70, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\Users\Pichau\Documents\projects\Marketplace-api\venv\MarketPlace\lib\site-packages\rest_framework\views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "C:\Users\Pichau\Documents\projects\Marketplace-api\venv\MarketPlace\lib\site-packages\rest_framework\views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\Users\Pichau\Documents\projects\Marketplace-api\venv\MarketPlace\lib\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "C:\Users\Pichau\Documents\projects\Marketplace-api\venv\MarketPlace\lib\site-packages\rest_framework\views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "C:\Users\Pichau\Documents\projects\Marketplace-api\MarketPlace\Propostal\views.py", line 13, in post
+    propostal = PropostalComponent(data=self.request.data).create()
+  File "C:\Users\Pichau\Documents\projects\Marketplace-api\MarketPlace\Lib\Propostal.py", line 82, in create
+    raise e
+  File "C:\Users\Pichau\Documents\projects\Marketplace-api\MarketPlace\Lib\Propostal.py", line 79, in create
+    self.update_propostal(offer=offer)
+  File "C:\Users\Pichau\Documents\projects\Marketplace-api\MarketPlace\Lib\Propostal.py", line 71, in update_propostal
+    self.send_request_to_service(local_request_data=self.validated_data, instance_propostal=self.instance)
+  File "C:\Users\Pichau\Documents\projects\Marketplace-api\MarketPlace\Lib\Propostal.py", line 59, in send_request_to_service
+    ManipulatePropostalModel.update_propostal(instance_to_update=instance_propostal, propostal_id=sended_propostal['propostal_id'], message=sended_propostal['propostal_id'])
+  File "C:\Users\Pichau\Documents\projects\Marketplace-api\MarketPlace\Lib\propostal\service.py", line 12, in __getitem__
+    return self.text[key]
+KeyError: 'propostal_id'
+INFO:django.utils.autoreload:C:\Users\Pichau\Documents\projects\Marketplace-api\MarketPlace\Lib\propostal\service.py changed, reloading.
+DEBUG:asyncio:Using proactor: IocpProactor
+INFO:django.utils.autoreload:Watching for file changes with StatReloader
+INFO:django.utils.autoreload:C:\Users\Pichau\Documents\projects\Marketplace-api\MarketPlace\Lib\propostal\service.py changed, reloading.
+DEBUG:asyncio:Using proactor: IocpProactor
+INFO:django.utils.autoreload:Watching for file changes with StatReloader
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): b5c49244-9620-485d-9b32-806899842a22.mock.pstmn.io:443
+DEBUG:urllib3.connectionpool:https://b5c49244-9620-485d-9b32-806899842a22.mock.pstmn.io:443 "POST /offers HTTP/1.1" 200 None
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): b5c49244-9620-485d-9b32-806899842a22.mock.pstmn.io:443
+DEBUG:urllib3.connectionpool:https://b5c49244-9620-485d-9b32-806899842a22.mock.pstmn.io:443 "POST /proposal HTTP/1.1" 200 None
+ERROR:django.request:Internal Server Error: /api/propostal/client
+Traceback (most recent call last):
+  File "C:\Users\Pichau\Documents\projects\Marketplace-api\MarketPlace\Lib\Propostal.py", line 55, in send_request_to_service
+    assert self.validate.client_have_a_propostal(delay_time_in_days=30, propostal_id=instance_propostal.id, propostal_client=instance_propostal.client)
+AssertionError
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\Pichau\Documents\projects\Marketplace-api\venv\MarketPlace\lib\site-packages\django\core\handlers\exception.py", line 47, in inner
+    response = get_response(request)
+  File "C:\Users\Pichau\Documents\projects\Marketplace-api\venv\MarketPlace\lib\site-packages\django\core\handlers\base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\Pichau\Documents\projects\Marketplace-api\venv\MarketPlace\lib\site-packages\django\views\decorators\csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "C:\Users\Pichau\Documents\projects\Marketplace-api\venv\MarketPlace\lib\site-packages\django\views\generic\base.py", line 70, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\Users\Pichau\Documents\projects\Marketplace-api\venv\MarketPlace\lib\site-packages\rest_framework\views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "C:\Users\Pichau\Documents\projects\Marketplace-api\venv\MarketPlace\lib\site-packages\rest_framework\views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\Users\Pichau\Documents\projects\Marketplace-api\venv\MarketPlace\lib\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "C:\Users\Pichau\Documents\projects\Marketplace-api\venv\MarketPlace\lib\site-packages\rest_framework\views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "C:\Users\Pichau\Documents\projects\Marketplace-api\MarketPlace\Propostal\views.py", line 13, in post
+    propostal = PropostalComponent(data=self.request.data).create()
+  File "C:\Users\Pichau\Documents\projects\Marketplace-api\MarketPlace\Lib\Propostal.py", line 82, in create
+    raise e
+  File "C:\Users\Pichau\Documents\projects\Marketplace-api\MarketPlace\Lib\Propostal.py", line 79, in create
+    self.update_propostal(offer=offer)
+  File "C:\Users\Pichau\Documents\projects\Marketplace-api\MarketPlace\Lib\Propostal.py", line 71, in update_propostal
+    self.send_request_to_service(local_request_data=self.validated_data, instance_propostal=self.instance)
+  File "C:\Users\Pichau\Documents\projects\Marketplace-api\MarketPlace\Lib\Propostal.py", line 59, in send_request_to_service
+    ManipulatePropostalModel.update_propostal(instance_to_update=instance_propostal, propostal_id=sended_propostal['propostal_id'], message=sended_propostal['propostal_id'])
+  File "C:\Users\Pichau\Documents\projects\Marketplace-api\MarketPlace\Lib\propostal\service.py", line 12, in __getitem__
+    return self.text[key]
+KeyError: 'propostal_id'
+INFO:django.utils.autoreload:C:\Users\Pichau\Documents\projects\Marketplace-api\MarketPlace\Lib\propostal\service.py changed, reloading.
+DEBUG:asyncio:Using proactor: IocpProactor
+INFO:django.utils.autoreload:Watching for file changes with StatReloader
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): b5c49244-9620-485d-9b32-806899842a22.mock.pstmn.io:443
+DEBUG:urllib3.connectionpool:https://b5c49244-9620-485d-9b32-806899842a22.mock.pstmn.io:443 "POST /proposal HTTP/1.1" 200 None
+ERROR:django.request:Internal Server Error: /api/propostal/client
+Traceback (most recent call last):
+  File "C:\Users\Pichau\Documents\projects\Marketplace-api\MarketPlace\Lib\Propostal.py", line 55, in send_request_to_service
+    assert self.validate.client_have_a_propostal(delay_time_in_days=30, propostal_id=instance_propostal.id, propostal_client=instance_propostal.client)
+AssertionError
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\Pichau\Documents\projects\Marketplace-api\venv\MarketPlace\lib\site-packages\django\core\handlers\exception.py", line 47, in inner
+    response = get_response(request)
+  File "C:\Users\Pichau\Documents\projects\Marketplace-api\venv\MarketPlace\lib\site-packages\django\core\handlers\base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\Pichau\Documents\projects\Marketplace-api\venv\MarketPlace\lib\site-packages\django\views\decorators\csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "C:\Users\Pichau\Documents\projects\Marketplace-api\venv\MarketPlace\lib\site-packages\django\views\generic\base.py", line 70, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\Users\Pichau\Documents\projects\Marketplace-api\venv\MarketPlace\lib\site-packages\rest_framework\views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "C:\Users\Pichau\Documents\projects\Marketplace-api\venv\MarketPlace\lib\site-packages\rest_framework\views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\Users\Pichau\Documents\projects\Marketplace-api\venv\MarketPlace\lib\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "C:\Users\Pichau\Documents\projects\Marketplace-api\venv\MarketPlace\lib\site-packages\rest_framework\views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "C:\Users\Pichau\Documents\projects\Marketplace-api\MarketPlace\Propostal\views.py", line 13, in post
+    propostal = PropostalComponent(data=self.request.data).create()
+  File "C:\Users\Pichau\Documents\projects\Marketplace-api\MarketPlace\Lib\Propostal.py", line 82, in create
+    raise e
+  File "C:\Users\Pichau\Documents\projects\Marketplace-api\MarketPlace\Lib\Propostal.py", line 79, in create
+    self.update_propostal(offer=offer)
+  File "C:\Users\Pichau\Documents\projects\Marketplace-api\MarketPlace\Lib\Propostal.py", line 71, in update_propostal
+    self.send_request_to_service(local_request_data=self.validated_data, instance_propostal=self.instance)
+  File "C:\Users\Pichau\Documents\projects\Marketplace-api\MarketPlace\Lib\Propostal.py", line 59, in send_request_to_service
+    ManipulatePropostalModel.update_propostal(instance_to_update=instance_propostal, propostal_id=sended_propostal['propostal_id'], message=sended_propostal['propostal_id'])
+  File "C:\Users\Pichau\Documents\projects\Marketplace-api\MarketPlace\Lib\propostal\service.py", line 12, in __getitem__
+    return self.text[key]
+KeyError: 'propostal_id'
+INFO:django.utils.autoreload:C:\Users\Pichau\Documents\projects\Marketplace-api\MarketPlace\Lib\Propostal.py changed, reloading.
+DEBUG:asyncio:Using proactor: IocpProactor
+INFO:django.utils.autoreload:Watching for file changes with StatReloader
+INFO:django.utils.autoreload:C:\Users\Pichau\Documents\projects\Marketplace-api\MarketPlace\Lib\propostal\service.py changed, reloading.
+DEBUG:asyncio:Using proactor: IocpProactor
+INFO:django.utils.autoreload:Watching for file changes with StatReloader
+INFO:django.utils.autoreload:C:\Users\Pichau\Documents\projects\Marketplace-api\MarketPlace\Lib\propostal\service.py changed, reloading.
+DEBUG:asyncio:Using proactor: IocpProactor
+INFO:django.utils.autoreload:Watching for file changes with StatReloader
+INFO:django.utils.autoreload:C:\Users\Pichau\Documents\projects\Marketplace-api\MarketPlace\Lib\Propostal.py changed, reloading.
+DEBUG:asyncio:Using proactor: IocpProactor
+INFO:django.utils.autoreload:Watching for file changes with StatReloader
+INFO:django.utils.autoreload:C:\Users\Pichau\Documents\projects\Marketplace-api\MarketPlace\Lib\Propostal.py changed, reloading.
+DEBUG:asyncio:Using proactor: IocpProactor
+INFO:django.utils.autoreload:Watching for file changes with StatReloader
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): b5c49244-9620-485d-9b32-806899842a22.mock.pstmn.io:443
+DEBUG:urllib3.connectionpool:https://b5c49244-9620-485d-9b32-806899842a22.mock.pstmn.io:443 "POST /proposal HTTP/1.1" 200 None
+ERROR:django.request:Internal Server Error: /api/propostal/client
+Traceback (most recent call last):
+  File "C:\Users\Pichau\Documents\projects\Marketplace-api\MarketPlace\Lib\Propostal.py", line 55, in send_request_to_service
+    assert self.validate.client_have_a_propostal(delay_time_in_days=30, propostal_id=instance_propostal.id, propostal_client=instance_propostal.client)
+AssertionError
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\Pichau\Documents\projects\Marketplace-api\venv\MarketPlace\lib\site-packages\django\core\handlers\exception.py", line 47, in inner
+    response = get_response(request)
+  File "C:\Users\Pichau\Documents\projects\Marketplace-api\venv\MarketPlace\lib\site-packages\django\core\handlers\base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\Pichau\Documents\projects\Marketplace-api\venv\MarketPlace\lib\site-packages\django\views\decorators\csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "C:\Users\Pichau\Documents\projects\Marketplace-api\venv\MarketPlace\lib\site-packages\django\views\generic\base.py", line 70, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\Users\Pichau\Documents\projects\Marketplace-api\venv\MarketPlace\lib\site-packages\rest_framework\views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "C:\Users\Pichau\Documents\projects\Marketplace-api\venv\MarketPlace\lib\site-packages\rest_framework\views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\Users\Pichau\Documents\projects\Marketplace-api\venv\MarketPlace\lib\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "C:\Users\Pichau\Documents\projects\Marketplace-api\venv\MarketPlace\lib\site-packages\rest_framework\views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "C:\Users\Pichau\Documents\projects\Marketplace-api\MarketPlace\Propostal\views.py", line 13, in post
+    propostal = PropostalComponent(data=self.request.data).create()
+  File "C:\Users\Pichau\Documents\projects\Marketplace-api\MarketPlace\Lib\Propostal.py", line 83, in create
+    raise e
+  File "C:\Users\Pichau\Documents\projects\Marketplace-api\MarketPlace\Lib\Propostal.py", line 80, in create
+    self.update_propostal(offer=offer)
+  File "C:\Users\Pichau\Documents\projects\Marketplace-api\MarketPlace\Lib\Propostal.py", line 72, in update_propostal
+    self.send_request_to_service(local_request_data=self.validated_data, instance_propostal=self.instance)
+  File "C:\Users\Pichau\Documents\projects\Marketplace-api\MarketPlace\Lib\Propostal.py", line 60, in send_request_to_service
+    ManipulatePropostalModel.update_propostal(instance_to_update=instance_propostal, propostal_id=sended_propostal['propostal_id'], message=sended_propostal['propostal_id'])
+  File "C:\Users\Pichau\Documents\projects\Marketplace-api\MarketPlace\Lib\propostal\service.py", line 12, in __getitem__
+    return self.text[key]
+KeyError: 'propostal_id'
+INFO:django.utils.autoreload:C:\Users\Pichau\Documents\projects\Marketplace-api\MarketPlace\Lib\Propostal.py changed, reloading.
+DEBUG:asyncio:Using proactor: IocpProactor
+INFO:django.utils.autoreload:Watching for file changes with StatReloader
+INFO:django.utils.autoreload:C:\Users\Pichau\Documents\projects\Marketplace-api\MarketPlace\Lib\Propostal.py changed, reloading.
+DEBUG:asyncio:Using proactor: IocpProactor
+INFO:django.utils.autoreload:Watching for file changes with StatReloader
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): b5c49244-9620-485d-9b32-806899842a22.mock.pstmn.io:443
+DEBUG:urllib3.connectionpool:https://b5c49244-9620-485d-9b32-806899842a22.mock.pstmn.io:443 "POST /proposal HTTP/1.1" 200 None
+ERROR:django.request:Internal Server Error: /api/propostal/client
+Traceback (most recent call last):
+  File "C:\Users\Pichau\Documents\projects\Marketplace-api\MarketPlace\Lib\Propostal.py", line 55, in send_request_to_service
+    assert self.validate.client_have_a_propostal(delay_time_in_days=30, propostal_id=instance_propostal.id, propostal_client=instance_propostal.client)
+AssertionError
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\Pichau\Documents\projects\Marketplace-api\venv\MarketPlace\lib\site-packages\django\core\handlers\exception.py", line 47, in inner
+    response = get_response(request)
+  File "C:\Users\Pichau\Documents\projects\Marketplace-api\venv\MarketPlace\lib\site-packages\django\core\handlers\base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\Pichau\Documents\projects\Marketplace-api\venv\MarketPlace\lib\site-packages\django\views\decorators\csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "C:\Users\Pichau\Documents\projects\Marketplace-api\venv\MarketPlace\lib\site-packages\django\views\generic\base.py", line 70, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\Users\Pichau\Documents\projects\Marketplace-api\venv\MarketPlace\lib\site-packages\rest_framework\views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "C:\Users\Pichau\Documents\projects\Marketplace-api\venv\MarketPlace\lib\site-packages\rest_framework\views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\Users\Pichau\Documents\projects\Marketplace-api\venv\MarketPlace\lib\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "C:\Users\Pichau\Documents\projects\Marketplace-api\venv\MarketPlace\lib\site-packages\rest_framework\views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "C:\Users\Pichau\Documents\projects\Marketplace-api\MarketPlace\Propostal\views.py", line 13, in post
+    propostal = PropostalComponent(data=self.request.data).create()
+  File "C:\Users\Pichau\Documents\projects\Marketplace-api\MarketPlace\Lib\Propostal.py", line 83, in create
+    raise e
+  File "C:\Users\Pichau\Documents\projects\Marketplace-api\MarketPlace\Lib\Propostal.py", line 80, in create
+    self.update_propostal(offer=offer)
+  File "C:\Users\Pichau\Documents\projects\Marketplace-api\MarketPlace\Lib\Propostal.py", line 72, in update_propostal
+    self.send_request_to_service(local_request_data=self.validated_data, instance_propostal=self.instance)
+  File "C:\Users\Pichau\Documents\projects\Marketplace-api\MarketPlace\Lib\Propostal.py", line 60, in send_request_to_service
+    ManipulatePropostalModel.update_propostal(instance_to_update=instance_propostal, propostal_id=sended_propostal['proposal_id'], message=sended_propostal['message'])
+TypeError: update_propostal() missing 1 required positional argument: 'self'
+INFO:django.utils.autoreload:C:\Users\Pichau\Documents\projects\Marketplace-api\MarketPlace\Lib\Propostal.py changed, reloading.
+DEBUG:asyncio:Using proactor: IocpProactor
+INFO:django.utils.autoreload:Watching for file changes with StatReloader
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): b5c49244-9620-485d-9b32-806899842a22.mock.pstmn.io:443
+DEBUG:urllib3.connectionpool:https://b5c49244-9620-485d-9b32-806899842a22.mock.pstmn.io:443 "POST /proposal HTTP/1.1" 200 None
+ERROR:django.request:Internal Server Error: /api/propostal/client
+Traceback (most recent call last):
+  File "C:\Users\Pichau\Documents\projects\Marketplace-api\MarketPlace\Lib\Propostal.py", line 55, in send_request_to_service
+    assert self.validate.client_have_a_propostal(delay_time_in_days=30, propostal_id=instance_propostal.id, propostal_client=instance_propostal.client)
+AssertionError
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\Pichau\Documents\projects\Marketplace-api\venv\MarketPlace\lib\site-packages\django\core\handlers\exception.py", line 47, in inner
+    response = get_response(request)
+  File "C:\Users\Pichau\Documents\projects\Marketplace-api\venv\MarketPlace\lib\site-packages\django\core\handlers\base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\Pichau\Documents\projects\Marketplace-api\venv\MarketPlace\lib\site-packages\django\views\decorators\csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "C:\Users\Pichau\Documents\projects\Marketplace-api\venv\MarketPlace\lib\site-packages\django\views\generic\base.py", line 70, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\Users\Pichau\Documents\projects\Marketplace-api\venv\MarketPlace\lib\site-packages\rest_framework\views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "C:\Users\Pichau\Documents\projects\Marketplace-api\venv\MarketPlace\lib\site-packages\rest_framework\views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\Users\Pichau\Documents\projects\Marketplace-api\venv\MarketPlace\lib\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "C:\Users\Pichau\Documents\projects\Marketplace-api\venv\MarketPlace\lib\site-packages\rest_framework\views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "C:\Users\Pichau\Documents\projects\Marketplace-api\MarketPlace\Propostal\views.py", line 13, in post
+    propostal = PropostalComponent(data=self.request.data).create()
+  File "C:\Users\Pichau\Documents\projects\Marketplace-api\MarketPlace\Lib\Propostal.py", line 83, in create
+    raise e
+  File "C:\Users\Pichau\Documents\projects\Marketplace-api\MarketPlace\Lib\Propostal.py", line 80, in create
+    self.update_propostal(offer=offer)
+  File "C:\Users\Pichau\Documents\projects\Marketplace-api\MarketPlace\Lib\Propostal.py", line 72, in update_propostal
+    self.send_request_to_service(local_request_data=self.validated_data, instance_propostal=self.instance)
+  File "C:\Users\Pichau\Documents\projects\Marketplace-api\MarketPlace\Lib\Propostal.py", line 60, in send_request_to_service
+    ManipulatePropostalModel.update_propostal(instance_to_update=instance_propostal, propostal_id=sended_propostal['proposal_id'], message=sended_propostal['message'])
+  File "C:\Users\Pichau\Documents\projects\Marketplace-api\MarketPlace\Lib\Propostal.py", line 31, in update_propostal
+    instance_to_update.udpate(**params)
+AttributeError: 'Propostal' object has no attribute 'udpate'
+INFO:django.utils.autoreload:C:\Users\Pichau\Documents\projects\Marketplace-api\MarketPlace\Lib\Propostal.py changed, reloading.
+DEBUG:asyncio:Using proactor: IocpProactor
+INFO:django.utils.autoreload:Watching for file changes with StatReloader
+INFO:django.utils.autoreload:C:\Users\Pichau\Documents\projects\Marketplace-api\MarketPlace\Lib\Propostal.py changed, reloading.
+DEBUG:asyncio:Using proactor: IocpProactor
+INFO:django.utils.autoreload:Watching for file changes with StatReloader
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): b5c49244-9620-485d-9b32-806899842a22.mock.pstmn.io:443
+DEBUG:urllib3.connectionpool:https://b5c49244-9620-485d-9b32-806899842a22.mock.pstmn.io:443 "POST /proposal HTTP/1.1" 200 None
+ERROR:django.request:Internal Server Error: /api/propostal/client
+Traceback (most recent call last):
+  File "C:\Users\Pichau\Documents\projects\Marketplace-api\MarketPlace\Lib\Propostal.py", line 55, in send_request_to_service
+    assert self.validate.client_have_a_propostal(delay_time_in_days=30, propostal_id=instance_propostal.id, propostal_client=instance_propostal.client)
+AssertionError
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\Pichau\Documents\projects\Marketplace-api\venv\MarketPlace\lib\site-packages\django\core\handlers\exception.py", line 47, in inner
+    response = get_response(request)
+  File "C:\Users\Pichau\Documents\projects\Marketplace-api\venv\MarketPlace\lib\site-packages\django\core\handlers\base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\Pichau\Documents\projects\Marketplace-api\venv\MarketPlace\lib\site-packages\django\views\decorators\csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "C:\Users\Pichau\Documents\projects\Marketplace-api\venv\MarketPlace\lib\site-packages\django\views\generic\base.py", line 70, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\Users\Pichau\Documents\projects\Marketplace-api\venv\MarketPlace\lib\site-packages\rest_framework\views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "C:\Users\Pichau\Documents\projects\Marketplace-api\venv\MarketPlace\lib\site-packages\rest_framework\views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\Users\Pichau\Documents\projects\Marketplace-api\venv\MarketPlace\lib\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "C:\Users\Pichau\Documents\projects\Marketplace-api\venv\MarketPlace\lib\site-packages\rest_framework\views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "C:\Users\Pichau\Documents\projects\Marketplace-api\MarketPlace\Propostal\views.py", line 13, in post
+    propostal = PropostalComponent(data=self.request.data).create()
+  File "C:\Users\Pichau\Documents\projects\Marketplace-api\MarketPlace\Lib\Propostal.py", line 83, in create
+    raise e
+  File "C:\Users\Pichau\Documents\projects\Marketplace-api\MarketPlace\Lib\Propostal.py", line 80, in create
+    self.update_propostal(offer=offer)
+  File "C:\Users\Pichau\Documents\projects\Marketplace-api\MarketPlace\Lib\Propostal.py", line 72, in update_propostal
+    self.send_request_to_service(local_request_data=self.validated_data, instance_propostal=self.instance)
+  File "C:\Users\Pichau\Documents\projects\Marketplace-api\MarketPlace\Lib\Propostal.py", line 60, in send_request_to_service
+    ManipulatePropostalModel.update_propostal(instance_to_update=instance_propostal, propostal_id=sended_propostal['proposal_id'], message=sended_propostal['message'])
+  File "C:\Users\Pichau\Documents\projects\Marketplace-api\MarketPlace\Lib\Propostal.py", line 31, in update_propostal
+    instance_to_update.update(**params)
+AttributeError: 'Propostal' object has no attribute 'update'
+INFO:django.utils.autoreload:C:\Users\Pichau\Documents\projects\Marketplace-api\MarketPlace\Lib\Propostal.py changed, reloading.
+DEBUG:asyncio:Using proactor: IocpProactor
+INFO:django.utils.autoreload:Watching for file changes with StatReloader
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): b5c49244-9620-485d-9b32-806899842a22.mock.pstmn.io:443
+DEBUG:urllib3.connectionpool:https://b5c49244-9620-485d-9b32-806899842a22.mock.pstmn.io:443 "POST /proposal HTTP/1.1" 200 None
+ERROR:django.request:Internal Server Error: /api/propostal/client
+Traceback (most recent call last):
+  File "C:\Users\Pichau\Documents\projects\Marketplace-api\MarketPlace\Lib\Propostal.py", line 56, in send_request_to_service
+    assert self.validate.client_have_a_propostal(delay_time_in_days=30, propostal_id=instance_propostal.id, propostal_client=instance_propostal.client)
+AssertionError
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\Pichau\Documents\projects\Marketplace-api\venv\MarketPlace\lib\site-packages\django\core\handlers\exception.py", line 47, in inner
+    response = get_response(request)
+  File "C:\Users\Pichau\Documents\projects\Marketplace-api\venv\MarketPlace\lib\site-packages\django\core\handlers\base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\Pichau\Documents\projects\Marketplace-api\venv\MarketPlace\lib\site-packages\django\views\decorators\csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "C:\Users\Pichau\Documents\projects\Marketplace-api\venv\MarketPlace\lib\site-packages\django\views\generic\base.py", line 70, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\Users\Pichau\Documents\projects\Marketplace-api\venv\MarketPlace\lib\site-packages\rest_framework\views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "C:\Users\Pichau\Documents\projects\Marketplace-api\venv\MarketPlace\lib\site-packages\rest_framework\views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\Users\Pichau\Documents\projects\Marketplace-api\venv\MarketPlace\lib\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "C:\Users\Pichau\Documents\projects\Marketplace-api\venv\MarketPlace\lib\site-packages\rest_framework\views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "C:\Users\Pichau\Documents\projects\Marketplace-api\MarketPlace\Propostal\views.py", line 13, in post
+    propostal = PropostalComponent(data=self.request.data).create()
+  File "C:\Users\Pichau\Documents\projects\Marketplace-api\MarketPlace\Lib\Propostal.py", line 84, in create
+    raise e
+  File "C:\Users\Pichau\Documents\projects\Marketplace-api\MarketPlace\Lib\Propostal.py", line 81, in create
+    self.update_propostal(offer=offer)
+  File "C:\Users\Pichau\Documents\projects\Marketplace-api\MarketPlace\Lib\Propostal.py", line 73, in update_propostal
+    self.send_request_to_service(local_request_data=self.validated_data, instance_propostal=self.instance)
+  File "C:\Users\Pichau\Documents\projects\Marketplace-api\MarketPlace\Lib\Propostal.py", line 61, in send_request_to_service
+    ManipulatePropostalModel.update_propostal(instance_to_update=instance_propostal, propostal_id=sended_propostal['proposal_id'], message=sended_propostal['message'])
+  File "C:\Users\Pichau\Documents\projects\Marketplace-api\MarketPlace\Lib\Propostal.py", line 32, in update_propostal
+    instance_to_update.update(**params)
+AttributeError: 'Propostal' object has no attribute 'update'
+INFO:django.utils.autoreload:C:\Users\Pichau\Documents\projects\Marketplace-api\MarketPlace\Lib\Propostal.py changed, reloading.
+DEBUG:asyncio:Using proactor: IocpProactor
+INFO:django.utils.autoreload:Watching for file changes with StatReloader
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): b5c49244-9620-485d-9b32-806899842a22.mock.pstmn.io:443
+DEBUG:urllib3.connectionpool:https://b5c49244-9620-485d-9b32-806899842a22.mock.pstmn.io:443 "POST /proposal HTTP/1.1" 200 None
+ERROR:django.request:Internal Server Error: /api/propostal/client
+Traceback (most recent call last):
+  File "C:\Users\Pichau\Documents\projects\Marketplace-api\MarketPlace\Lib\Propostal.py", line 57, in send_request_to_service
+    assert self.validate.client_have_a_propostal(delay_time_in_days=30, propostal_id=instance_propostal.id, propostal_client=instance_propostal.client)
+AssertionError
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\Pichau\Documents\projects\Marketplace-api\venv\MarketPlace\lib\site-packages\django\core\handlers\exception.py", line 47, in inner
+    response = get_response(request)
+  File "C:\Users\Pichau\Documents\projects\Marketplace-api\venv\MarketPlace\lib\site-packages\django\core\handlers\base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\Pichau\Documents\projects\Marketplace-api\venv\MarketPlace\lib\site-packages\django\views\decorators\csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "C:\Users\Pichau\Documents\projects\Marketplace-api\venv\MarketPlace\lib\site-packages\django\views\generic\base.py", line 70, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\Users\Pichau\Documents\projects\Marketplace-api\venv\MarketPlace\lib\site-packages\rest_framework\views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "C:\Users\Pichau\Documents\projects\Marketplace-api\venv\MarketPlace\lib\site-packages\rest_framework\views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\Users\Pichau\Documents\projects\Marketplace-api\venv\MarketPlace\lib\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "C:\Users\Pichau\Documents\projects\Marketplace-api\venv\MarketPlace\lib\site-packages\rest_framework\views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "C:\Users\Pichau\Documents\projects\Marketplace-api\MarketPlace\Propostal\views.py", line 13, in post
+    propostal = PropostalComponent(data=self.request.data).create()
+  File "C:\Users\Pichau\Documents\projects\Marketplace-api\MarketPlace\Lib\Propostal.py", line 85, in create
+    raise e
+  File "C:\Users\Pichau\Documents\projects\Marketplace-api\MarketPlace\Lib\Propostal.py", line 82, in create
+    self.update_propostal(offer=offer)
+  File "C:\Users\Pichau\Documents\projects\Marketplace-api\MarketPlace\Lib\Propostal.py", line 74, in update_propostal
+    self.send_request_to_service(local_request_data=self.validated_data, instance_propostal=self.instance)
+  File "C:\Users\Pichau\Documents\projects\Marketplace-api\MarketPlace\Lib\Propostal.py", line 62, in send_request_to_service
+    ManipulatePropostalModel.update_propostal(instance_to_update=instance_propostal, propostal_id=sended_propostal['proposal_id'], message=sended_propostal['message'])
+  File "C:\Users\Pichau\Documents\projects\Marketplace-api\MarketPlace\Lib\Propostal.py", line 33, in update_propostal
+    instance_to_update.update(**params)
+AttributeError: 'Propostal' object has no attribute 'update'
+INFO:django.utils.autoreload:C:\Users\Pichau\Documents\projects\Marketplace-api\MarketPlace\Lib\Propostal.py changed, reloading.
+DEBUG:asyncio:Using proactor: IocpProactor
+INFO:django.utils.autoreload:Watching for file changes with StatReloader
+INFO:django.utils.autoreload:C:\Users\Pichau\Documents\projects\Marketplace-api\MarketPlace\Lib\Propostal.py changed, reloading.
+DEBUG:asyncio:Using proactor: IocpProactor
+INFO:django.utils.autoreload:Watching for file changes with StatReloader
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): b5c49244-9620-485d-9b32-806899842a22.mock.pstmn.io:443
+DEBUG:urllib3.connectionpool:https://b5c49244-9620-485d-9b32-806899842a22.mock.pstmn.io:443 "POST /proposal HTTP/1.1" 200 None
+ERROR:django.request:Internal Server Error: /api/propostal/client
+Traceback (most recent call last):
+  File "C:\Users\Pichau\Documents\projects\Marketplace-api\MarketPlace\Lib\Propostal.py", line 59, in send_request_to_service
+    assert self.validate.client_have_a_propostal(delay_time_in_days=30, propostal_id=instance_propostal.id, propostal_client=instance_propostal.client)
+AssertionError
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\Pichau\Documents\projects\Marketplace-api\venv\MarketPlace\lib\site-packages\django\db\models\options.py", line 575, in get_field
+    return self.fields_map[field_name]
+KeyError: 'propostal_id'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\Pichau\Documents\projects\Marketplace-api\venv\MarketPlace\lib\site-packages\django\core\handlers\exception.py", line 47, in inner
+    response = get_response(request)
+  File "C:\Users\Pichau\Documents\projects\Marketplace-api\venv\MarketPlace\lib\site-packages\django\core\handlers\base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\Pichau\Documents\projects\Marketplace-api\venv\MarketPlace\lib\site-packages\django\views\decorators\csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "C:\Users\Pichau\Documents\projects\Marketplace-api\venv\MarketPlace\lib\site-packages\django\views\generic\base.py", line 70, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\Users\Pichau\Documents\projects\Marketplace-api\venv\MarketPlace\lib\site-packages\rest_framework\views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "C:\Users\Pichau\Documents\projects\Marketplace-api\venv\MarketPlace\lib\site-packages\rest_framework\views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\Users\Pichau\Documents\projects\Marketplace-api\venv\MarketPlace\lib\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "C:\Users\Pichau\Documents\projects\Marketplace-api\venv\MarketPlace\lib\site-packages\rest_framework\views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "C:\Users\Pichau\Documents\projects\Marketplace-api\MarketPlace\Propostal\views.py", line 13, in post
+    propostal = PropostalComponent(data=self.request.data).create()
+  File "C:\Users\Pichau\Documents\projects\Marketplace-api\MarketPlace\Lib\Propostal.py", line 87, in create
+    raise e
+  File "C:\Users\Pichau\Documents\projects\Marketplace-api\MarketPlace\Lib\Propostal.py", line 84, in create
+    self.update_propostal(offer=offer)
+  File "C:\Users\Pichau\Documents\projects\Marketplace-api\MarketPlace\Lib\Propostal.py", line 76, in update_propostal
+    self.send_request_to_service(local_request_data=self.validated_data, instance_propostal=self.instance)
+  File "C:\Users\Pichau\Documents\projects\Marketplace-api\MarketPlace\Lib\Propostal.py", line 64, in send_request_to_service
+    ManipulatePropostalModel.update_propostal(instance_to_update=instance_propostal, propostal_id=sended_propostal['proposal_id'], message=sended_propostal['message'])
+  File "C:\Users\Pichau\Documents\projects\Marketplace-api\MarketPlace\Lib\Propostal.py", line 35, in update_propostal
+    Offers.objects.filter(id=instance_to_update.id).update(**params)
+  File "C:\Users\Pichau\Documents\projects\Marketplace-api\venv\MarketPlace\lib\site-packages\django\db\models\query.py", line 780, in update
+    query.add_update_values(kwargs)
+  File "C:\Users\Pichau\Documents\projects\Marketplace-api\venv\MarketPlace\lib\site-packages\django\db\models\sql\subqueries.py", line 85, in add_update_values
+    field = self.get_meta().get_field(name)
+  File "C:\Users\Pichau\Documents\projects\Marketplace-api\venv\MarketPlace\lib\site-packages\django\db\models\options.py", line 577, in get_field
+    raise FieldDoesNotExist("%s has no field named '%s'" % (self.object_name, field_name))
+django.core.exceptions.FieldDoesNotExist: Offers has no field named 'propostal_id'
+INFO:django.utils.autoreload:C:\Users\Pichau\Documents\projects\Marketplace-api\MarketPlace\Lib\Propostal.py changed, reloading.
+DEBUG:asyncio:Using proactor: IocpProactor
+INFO:django.utils.autoreload:Watching for file changes with StatReloader
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): b5c49244-9620-485d-9b32-806899842a22.mock.pstmn.io:443
+DEBUG:urllib3.connectionpool:https://b5c49244-9620-485d-9b32-806899842a22.mock.pstmn.io:443 "POST /proposal HTTP/1.1" 200 None
+INFO:django.utils.autoreload:C:\Users\Pichau\Documents\projects\Marketplace-api\MarketPlace\Lib\Propostal.py changed, reloading.
+DEBUG:asyncio:Using proactor: IocpProactor
+INFO:django.utils.autoreload:Watching for file changes with StatReloader
+INFO:django.utils.autoreload:C:\Users\Pichau\Documents\projects\Marketplace-api\MarketPlace\Lib\Propostal.py changed, reloading.
+DEBUG:asyncio:Using proactor: IocpProactor
+INFO:django.utils.autoreload:Watching for file changes with StatReloader
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): b5c49244-9620-485d-9b32-806899842a22.mock.pstmn.io:443
+DEBUG:urllib3.connectionpool:https://b5c49244-9620-485d-9b32-806899842a22.mock.pstmn.io:443 "POST /proposal HTTP/1.1" 200 None
+INFO:django.utils.autoreload:C:\Users\Pichau\Documents\projects\Marketplace-api\MarketPlace\Lib\Propostal.py changed, reloading.
+DEBUG:asyncio:Using proactor: IocpProactor
+INFO:django.utils.autoreload:Watching for file changes with StatReloader
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): b5c49244-9620-485d-9b32-806899842a22.mock.pstmn.io:443
+DEBUG:urllib3.connectionpool:https://b5c49244-9620-485d-9b32-806899842a22.mock.pstmn.io:443 "POST /offers HTTP/1.1" 200 None
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): b5c49244-9620-485d-9b32-806899842a22.mock.pstmn.io:443
+DEBUG:urllib3.connectionpool:https://b5c49244-9620-485d-9b32-806899842a22.mock.pstmn.io:443 "POST /proposal HTTP/1.1" 200 None
+ERROR:django.request:Internal Server Error: /api/propostal/client
+Traceback (most recent call last):
+  File "C:\Users\Pichau\Documents\projects\Marketplace-api\MarketPlace\Lib\Propostal.py", line 62, in send_request_to_service
+    assert self.validate.client_have_a_propostal(delay_time_in_days=30, propostal_id=instance_propostal.id, propostal_client=instance_propostal.client)
+AssertionError
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\Pichau\Documents\projects\Marketplace-api\venv\MarketPlace\lib\site-packages\django\core\handlers\exception.py", line 47, in inner
+    response = get_response(request)
+  File "C:\Users\Pichau\Documents\projects\Marketplace-api\venv\MarketPlace\lib\site-packages\django\core\handlers\base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\Pichau\Documents\projects\Marketplace-api\venv\MarketPlace\lib\site-packages\django\views\decorators\csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "C:\Users\Pichau\Documents\projects\Marketplace-api\venv\MarketPlace\lib\site-packages\django\views\generic\base.py", line 70, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\Users\Pichau\Documents\projects\Marketplace-api\venv\MarketPlace\lib\site-packages\rest_framework\views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "C:\Users\Pichau\Documents\projects\Marketplace-api\venv\MarketPlace\lib\site-packages\rest_framework\views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\Users\Pichau\Documents\projects\Marketplace-api\venv\MarketPlace\lib\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "C:\Users\Pichau\Documents\projects\Marketplace-api\venv\MarketPlace\lib\site-packages\rest_framework\views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "C:\Users\Pichau\Documents\projects\Marketplace-api\MarketPlace\Propostal\views.py", line 13, in post
+    propostal = PropostalComponent(data=self.request.data).create()
+  File "C:\Users\Pichau\Documents\projects\Marketplace-api\MarketPlace\Lib\Propostal.py", line 90, in create
+    raise e
+  File "C:\Users\Pichau\Documents\projects\Marketplace-api\MarketPlace\Lib\Propostal.py", line 87, in create
+    self.update_propostal(offer=offer)
+  File "C:\Users\Pichau\Documents\projects\Marketplace-api\MarketPlace\Lib\Propostal.py", line 79, in update_propostal
+    self.send_request_to_service(local_request_data=self.validated_data, instance_propostal=self.instance)
+  File "C:\Users\Pichau\Documents\projects\Marketplace-api\MarketPlace\Lib\Propostal.py", line 67, in send_request_to_service
+    ManipulatePropostalModel.update(instance_to_update=instance_propostal, propostal_id=sended_propostal['proposal_id'], message=sended_propostal['message'])
+  File "C:\Users\Pichau\Documents\projects\Marketplace-api\MarketPlace\Lib\Propostal.py", line 36, in update
+    instance_to_update.propostal_id = params['proposal_id']
+KeyError: 'proposal_id'
+INFO:django.utils.autoreload:C:\Users\Pichau\Documents\projects\Marketplace-api\MarketPlace\Lib\Propostal.py changed, reloading.
+DEBUG:asyncio:Using proactor: IocpProactor
+INFO:django.utils.autoreload:Watching for file changes with StatReloader
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): b5c49244-9620-485d-9b32-806899842a22.mock.pstmn.io:443
+DEBUG:urllib3.connectionpool:https://b5c49244-9620-485d-9b32-806899842a22.mock.pstmn.io:443 "POST /proposal HTTP/1.1" 200 None
+INFO:django.utils.autoreload:C:\Users\Pichau\Documents\projects\Marketplace-api\MarketPlace\Client\serializer.py changed, reloading.
+DEBUG:asyncio:Using proactor: IocpProactor
+INFO:django.utils.autoreload:Watching for file changes with StatReloader
+DEBUG:asyncio:Using proactor: IocpProactor
+DEBUG:asyncio:Using proactor: IocpProactor
+DEBUG:asyncio:Using proactor: IocpProactor
+DEBUG:asyncio:Using proactor: IocpProactor
+DEBUG:asyncio:Using proactor: IocpProactor
+DEBUG:asyncio:Using proactor: IocpProactor
+INFO:django.utils.autoreload:Watching for file changes with StatReloader
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): b5c49244-9620-485d-9b32-806899842a22.mock.pstmn.io:443
+DEBUG:urllib3.connectionpool:https://b5c49244-9620-485d-9b32-806899842a22.mock.pstmn.io:443 "POST /offers HTTP/1.1" 200 None
+INFO:django.utils.autoreload:C:\Users\Pichau\Documents\projects\Marketplace-api\MarketPlace\Lib\Propostal.py changed, reloading.
+DEBUG:asyncio:Using proactor: IocpProactor
+INFO:django.utils.autoreload:Watching for file changes with StatReloader
+ERROR:django.request:Internal Server Error: /api/propostal/client
+Traceback (most recent call last):
+  File "C:\Users\Pichau\Documents\projects\Marketplace-api\venv\MarketPlace\lib\site-packages\django\db\backends\mysql\base.py", line 73, in execute
+    return self.cursor.execute(query, args)
+  File "C:\Users\Pichau\Documents\projects\Marketplace-api\venv\MarketPlace\lib\site-packages\MySQLdb\cursors.py", line 206, in execute
+    res = self._query(query)
+  File "C:\Users\Pichau\Documents\projects\Marketplace-api\venv\MarketPlace\lib\site-packages\MySQLdb\cursors.py", line 319, in _query
+    db.query(q)
+  File "C:\Users\Pichau\Documents\projects\Marketplace-api\venv\MarketPlace\lib\site-packages\MySQLdb\connections.py", line 259, in query
+    _mysql.connection.query(self, query)
+MySQLdb._exceptions.OperationalError: (1048, "Column 'date_send' cannot be null")
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\Pichau\Documents\projects\Marketplace-api\venv\MarketPlace\lib\site-packages\django\core\handlers\exception.py", line 47, in inner
+    response = get_response(request)
+  File "C:\Users\Pichau\Documents\projects\Marketplace-api\venv\MarketPlace\lib\site-packages\django\core\handlers\base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\Pichau\Documents\projects\Marketplace-api\venv\MarketPlace\lib\site-packages\django\views\decorators\csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "C:\Users\Pichau\Documents\projects\Marketplace-api\venv\MarketPlace\lib\site-packages\django\views\generic\base.py", line 70, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\Users\Pichau\Documents\projects\Marketplace-api\venv\MarketPlace\lib\site-packages\rest_framework\views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "C:\Users\Pichau\Documents\projects\Marketplace-api\venv\MarketPlace\lib\site-packages\rest_framework\views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\Users\Pichau\Documents\projects\Marketplace-api\venv\MarketPlace\lib\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "C:\Users\Pichau\Documents\projects\Marketplace-api\venv\MarketPlace\lib\site-packages\rest_framework\views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "C:\Users\Pichau\Documents\projects\Marketplace-api\MarketPlace\Propostal\views.py", line 13, in post
+    propostal = PropostalComponent(data=self.request.data).create()
+  File "C:\Users\Pichau\Documents\projects\Marketplace-api\MarketPlace\Lib\Propostal.py", line 81, in create
+    self.instance = Propostal.objects.create()
+  File "C:\Users\Pichau\Documents\projects\Marketplace-api\venv\MarketPlace\lib\site-packages\django\db\models\manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "C:\Users\Pichau\Documents\projects\Marketplace-api\venv\MarketPlace\lib\site-packages\django\db\models\query.py", line 447, in create
+    obj.save(force_insert=True, using=self.db)
+  File "C:\Users\Pichau\Documents\projects\Marketplace-api\venv\MarketPlace\lib\site-packages\django\db\models\base.py", line 753, in save
+    self.save_base(using=using, force_insert=force_insert,
+  File "C:\Users\Pichau\Documents\projects\Marketplace-api\venv\MarketPlace\lib\site-packages\django\db\models\base.py", line 790, in save_base
+    updated = self._save_table(
+  File "C:\Users\Pichau\Documents\projects\Marketplace-api\venv\MarketPlace\lib\site-packages\django\db\models\base.py", line 895, in _save_table
+    results = self._do_insert(cls._base_manager, using, fields, returning_fields, raw)
+  File "C:\Users\Pichau\Documents\projects\Marketplace-api\venv\MarketPlace\lib\site-packages\django\db\models\base.py", line 933, in _do_insert
+    return manager._insert(
+  File "C:\Users\Pichau\Documents\projects\Marketplace-api\venv\MarketPlace\lib\site-packages\django\db\models\manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "C:\Users\Pichau\Documents\projects\Marketplace-api\venv\MarketPlace\lib\site-packages\django\db\models\query.py", line 1254, in _insert
+    return query.get_compiler(using=using).execute_sql(returning_fields)
+  File "C:\Users\Pichau\Documents\projects\Marketplace-api\venv\MarketPlace\lib\site-packages\django\db\models\sql\compiler.py", line 1397, in execute_sql
+    cursor.execute(sql, params)
+  File "C:\Users\Pichau\Documents\projects\Marketplace-api\venv\MarketPlace\lib\site-packages\django\db\backends\utils.py", line 98, in execute
+    return super().execute(sql, params)
+  File "C:\Users\Pichau\Documents\projects\Marketplace-api\venv\MarketPlace\lib\site-packages\django\db\backends\utils.py", line 66, in execute
+    return self._execute_with_wrappers(sql, params, many=False, executor=self._execute)
+  File "C:\Users\Pichau\Documents\projects\Marketplace-api\venv\MarketPlace\lib\site-packages\django\db\backends\utils.py", line 75, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+  File "C:\Users\Pichau\Documents\projects\Marketplace-api\venv\MarketPlace\lib\site-packages\django\db\backends\utils.py", line 84, in _execute
+    return self.cursor.execute(sql, params)
+  File "C:\Users\Pichau\Documents\projects\Marketplace-api\venv\MarketPlace\lib\site-packages\django\db\backends\mysql\base.py", line 78, in execute
+    raise IntegrityError(*tuple(e.args))
+django.db.utils.IntegrityError: (1048, "Column 'date_send' cannot be null")
+INFO:django.utils.autoreload:C:\Users\Pichau\Documents\projects\Marketplace-api\MarketPlace\Propostal\models.py changed, reloading.
+DEBUG:asyncio:Using proactor: IocpProactor
+INFO:django.utils.autoreload:Watching for file changes with StatReloader
+DEBUG:asyncio:Using proactor: IocpProactor
+DEBUG:asyncio:Using proactor: IocpProactor
+DEBUG:asyncio:Using proactor: IocpProactor
+DEBUG:asyncio:Using proactor: IocpProactor
+INFO:django.utils.autoreload:Watching for file changes with StatReloader
+DEBUG:asyncio:Using proactor: IocpProactor
+DEBUG:asyncio:Using proactor: IocpProactor
+DEBUG:asyncio:Using proactor: IocpProactor
+DEBUG:asyncio:Using proactor: IocpProactor
+DEBUG:asyncio:Using proactor: IocpProactor
+DEBUG:asyncio:Using proactor: IocpProactor
+DEBUG:asyncio:Using proactor: IocpProactor
+DEBUG:asyncio:Using proactor: IocpProactor
+DEBUG:asyncio:Using proactor: IocpProactor
+DEBUG:asyncio:Using proactor: IocpProactor
+DEBUG:asyncio:Using proactor: IocpProactor
+DEBUG:asyncio:Using proactor: IocpProactor
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): b5c49244-9620-485d-9b32-806899842a22.mock.pstmn.io:443
+DEBUG:urllib3.connectionpool:https://b5c49244-9620-485d-9b32-806899842a22.mock.pstmn.io:443 "POST /proposal HTTP/1.1" 200 None
