@@ -16,6 +16,4 @@ Before you run the project, make sure if you are using Ubuntu or other SO distri
 2. After you run the "run.sh", open a new terminal and activate you virtual enviroment and start celery. </br>
 2.1 source venv/market_place/bin/activate </br>
 2.2 celery -A MarketPlace worker -l info -B 
-</br></br>
-
-* Please, run this project in python 3.8 for a better experience
+3. Please, run this project in python 3.8 for a better experience
