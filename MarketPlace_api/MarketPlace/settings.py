@@ -40,7 +40,7 @@ CELERY_TIMEZONE = 'America/Sao_Paulo'
 CELERY_BEAT_SCHEDULE = {
     'verify_propostal': {
         'task': 'Propostal.tasks.task_verify_propostal',
-        'schedule': crontab()
+        'schedule': crontab(minute=0, hour='22')
     }
 }
 

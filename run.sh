@@ -4,11 +4,11 @@ echo
 echo "------------------------- Iniciando configuraçao de virtualenv -------------------------"
 echo
 
+python -m pip install --upgrade pip
 pip install virtualenv
 virtualenv venv/market_place -p python3.8
 source venv/market_place/bin/activate
-python -m pip install --upgrade pip
-cd MarketPlace/
+cd MarketPlace_api/
 pip install -r requirements.txt
 
 echo
@@ -24,6 +24,6 @@ echo
 echo "------------------------- Iniciando projeto -------------------------"
 echo
 
-cd MarketPlace/
+cd MarketPlace_api/
 python manage.py migrate
-python manage.py runserver
+python manage.py runserver && celery -A MarketPlace worker -l info -B

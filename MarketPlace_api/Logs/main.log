@@ -5219,3 +5219,11 @@ DEBUG:asyncio:Using proactor: IocpProactor
 DEBUG:asyncio:Using proactor: IocpProactor
 DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): b5c49244-9620-485d-9b32-806899842a22.mock.pstmn.io:443
 DEBUG:urllib3.connectionpool:https://b5c49244-9620-485d-9b32-806899842a22.mock.pstmn.io:443 "POST /proposal HTTP/1.1" 200 None
+DEBUG:asyncio:Using selector: KqueueSelector
+INFO:django.utils.autoreload:Watching for file changes with StatReloader
+DEBUG:asyncio:Using selector: KqueueSelector
+DEBUG:asyncio:Using selector: KqueueSelector
+DEBUG:asyncio:Using selector: KqueueSelector
+INFO:django.utils.autoreload:Watching for file changes with StatReloader
+DEBUG:asyncio:Using selector: KqueueSelector
+DEBUG:asyncio:Using selector: KqueueSelector

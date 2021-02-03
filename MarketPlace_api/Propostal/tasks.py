@@ -6,7 +6,7 @@ from Client.serializer import SerializeClient
 from Lib.Propostal import ManipulatePropostalModel
 from Lib.propostal.service import PropostalService
 
-# @shared_task()
+@shared_task()
 def task_verify_propostal():
     now = datetime.now().date()
     future = datetime.now().date() + timedelta(days=30)
