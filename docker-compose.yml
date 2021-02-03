@@ -16,6 +16,16 @@ services:
     # networks:
     #   - backend-network
 
+  api:
+    build:
+      context: ./MarketPlace/
+      dockerfile: Dockerfile
+    # command: bash -c "python /MarketPlace/manage.py migrate"
+    container_name: API
+    ports: 
+      - "8000:8000"
+    depends_on: 
+      - db
   redis:
     image: "redis:alpine"
     container_name: Redis
@@ -46,6 +56,13 @@ services:
 # networks:
 #   backend-network:
 #   frontend-network:
+
+  redis:
+    image: "redis:alpine"
+    container_name: Redis
+    # command: redis-server --requirepass password
+    ports:
+      - '6379:6379'
 
 volumes:
   my-db:

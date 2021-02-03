@@ -23,24 +23,25 @@ class SerializeClient(serializers.ModelSerializer):
             'telephone',
             'net_salary'
         )
-
-    def validate_net_salary(self, data):
-        errors = dict()
-        temp_err = list()
-        print(re.findall(r"\d+[.]\d", str(data) ))
-        if not bool(re.findall(r"\d+[.]\d", str(data) )):
-            temp_err.append("O salario liquido deve ser um numero com ponto flutuante.")
-        if len(temp_err) > 0:
-            raise ValidationError(temp_err)
-        return data
+    
+    def raise_error(self, msg, validation):
+        if not bool(validation):
+            raise ValidationError(msg)
 
     def validate_cpf(self, data):
-        cpf = data
         validation = ValidateCpf(cpf_text=data, full_validation=True)
-        if not bool(validation):
-            raise ValidationError("CPF Invalido")
+        self.raise_error(msg="CPF Invalido", validation=validation)
         return data
 
+    def validate_telephone(self, data):
+        validation = True if len(re.findall(r'\d', data)) == 11 else False
+        self.raise_error(msg="Telefone Invalido, ele deve conter 11 numeros", validation=validation)
+        return data
+
+    def validate_full_name(self, data):
+        validation = re.findall(r'\D\s\D', data)
+        self.raise_error(msg="Insira um nome completo", validation=validation)
+        return data
 
     def create(self, validated_data):
         client, _ = self.Meta.model.objects.get_or_create(**validated_data)
