@@ -26,4 +26,4 @@ echo
 
 cd MarketPlace_api/
 python manage.py migrate
-python manage.py runserver && celery -A MarketPlace worker -l info -B
+python manage.py runserver
